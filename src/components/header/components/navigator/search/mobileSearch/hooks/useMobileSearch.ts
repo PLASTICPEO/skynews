@@ -3,14 +3,6 @@ import { useEffect, useState } from "react";
 
 export const useMobileSearch = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [isOpenMobileSearchField, setIsOpenMobileSearchField] = useState(false);
-
-    const toggleMobileSearchField = () => {
-    setIsOpenMobileSearchField(!isOpenMobileSearchField);
-
-    };
-
-    
 
     useEffect(() => {
       const handleResize = () => {
@@ -26,7 +18,6 @@ export const useMobileSearch = () => {
 
     return {
         isMobile,
-        isOpenMobileSearchField,
-        toggleMobileSearchField
+       
     }
 }

@@ -1,13 +1,14 @@
-import { useMobileSearch } from "./hooks/useMobileSearch";
+import { useContext } from "react";
+import { HeaderContext } from "../../../../../../context/HeaderContext";
 
 const MobileSearch = () => {
-  const { isOpenMobileSearchField, toggleMobileSearchField } =
-    useMobileSearch();
+  const { isOpenSearchField, toggleMobileSearchField } =
+    useContext(HeaderContext);
 
   return (
     <div
       className={`flex items-center absolute top-14 w-full h-28  bg-[#FFFFFF] ${
-        isOpenMobileSearchField ? "invisible" : "visible"
+        isOpenSearchField ? "visible" : "invisible"
       } z-40`}
     >
       <span className="material-symbols-outlined  ml-7 text-[#475467]">

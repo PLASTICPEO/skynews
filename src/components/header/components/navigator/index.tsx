@@ -1,11 +1,14 @@
 import DropDown from "./dropDown";
 import Search from "./search";
 import { useNavigator } from "./hooks/useNavigator";
+import { useContext } from "react";
+import { HeaderContext } from "../../../../context/HeaderContext";
 import searchClose from "../../../../assets/images/searchFieldClose.svg";
 
 const Navigator = () => {
-  const { isOpenSearch, isOpenDropDown, toggleDropDown, toggleSearchField } =
-    useNavigator();
+  const { isOpenSearchField, toggleMobileSearchField } =
+    useContext(HeaderContext);
+  const { isOpenDropDown, toggleDropDown } = useNavigator();
 
   return (
     <>
@@ -47,9 +50,9 @@ const Navigator = () => {
           </li>
         </ul>
 
-        {!isOpenSearch ? (
+        {!isOpenSearchField ? (
           <div
-            onClick={() => toggleSearchField()}
+            onClick={() => toggleMobileSearchField()}
             className="flex justify-center h-[28px] font-[Helvetica] ml-9 border-l-2 border-[#EAECF0] cursor-pointer"
           >
             <span className="material-symbols-outlined  ml-7 text-[#475467]">
@@ -59,14 +62,14 @@ const Navigator = () => {
           </div>
         ) : (
           <div
-            onClick={() => toggleSearchField()}
+            onClick={() => toggleMobileSearchField()}
             className="flex justify-center h-[28px] font-[Helvetica] ml-9 border-l-2 border-[#EAECF0] cursor-pointer"
           >
             <img className="ml-7" src={searchClose} />
           </div>
         )}
       </div>
-      {isOpenSearch ? <Search /> : ""}
+      {isOpenSearchField ? <Search /> : ""}
       {isOpenDropDown ? <DropDown /> : ""}
     </>
   );
