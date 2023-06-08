@@ -5,5 +5,7 @@ export interface NavProviderProps {
 
 export interface NavContextType {
     toggleMobileSearchField: () => void;
+    toggleDropDown: () => void;
     isOpenSearchField: boolean;
+    isOpenDropDown: boolean;
   }
