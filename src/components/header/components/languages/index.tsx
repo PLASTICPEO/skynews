@@ -24,7 +24,7 @@ const Languages = () => {
 
   return (
     <>
-      <ul className="absolute xl:top-4 xl:visible invisible xl:left-28 flex space-x-5 font-[Helvetica] font-medium text-xs text-[#475467] cursor-pointer">
+      <ul className=" xl:visible invisible flex space-x-5 font-[Helvetica] font-medium text-xs text-[#475467] cursor-pointer">
         {lang.map((language) => (
           <li
             key={language.id}

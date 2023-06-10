@@ -10,7 +10,7 @@ const App = () => {
       <HeaderProvider>
         <Header />
       </HeaderProvider>
-      <div className="xl:flex">
+      <div className="grid grid-cols-2">
         <NewsFeed />
         <SideNewsFeed />
       </div>
