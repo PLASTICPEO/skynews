@@ -1,6 +1,7 @@
 import Header from "../../pages/header";
+import { ReactNode } from "react";
 
-const DefaultLayout = () => {
+const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
       <Header />
@@ -8,3 +9,4 @@ const DefaultLayout = () => {
     </>
   );
 };
+export default DefaultLayout;
