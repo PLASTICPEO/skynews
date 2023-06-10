@@ -1,0 +1,26 @@
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF; /* Set the background color of the buttons */
+  color: white; /* Set the text color of the buttons */
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: gray; /* Set the background color of the pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white; /* Set the background color of the active pagination bullet */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 8px;
+  z-index: 40;
+  color: black;
+}

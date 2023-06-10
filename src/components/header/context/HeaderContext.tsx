@@ -28,9 +28,9 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
     <HeaderContext.Provider
       value={{
         isOpenSearchField,
+        isOpenDropDown,
         toggleMobileSearchField,
         toggleDropDown,
-        isOpenDropDown,
       }}
     >
       {children}

@@ -1,7 +1,7 @@
 import DropDown from "./dropDown";
 import Search from "./search";
 import { useContext } from "react";
-import { HeaderContext } from "../../../../context/HeaderContext";
+import { HeaderContext } from "../../context/HeaderContext";
 import searchClose from "../../../../assets/images/searchFieldClose.svg";
 
 const Navigator = () => {
@@ -13,8 +13,8 @@ const Navigator = () => {
   } = useContext(HeaderContext);
 
   return (
-    <>
-      <div className="flex absolute xl:top-[18%] top-32 xl:left-36 xl:pl-0 pl-5  font-[Helvetica] h-12 xl:w-auto w-96  overflow-x-scroll overflow-y-hidden">
+    <div>
+      <div className="flex absolute xl:bottom-[0%] bottom-[0%] xl:left-28 xl:pl-0 pl-5  font-[Helvetica] h-12 xl:w-auto w-96  overflow-x-scroll overflow-y-hidden">
         <ul className="flex items-center justify-center xl:space-x-6 space-x-4  font-[Helvica] text-[#475467] text-sm   cursor-pointer ">
           <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
             მთავარი
@@ -73,7 +73,7 @@ const Navigator = () => {
       </div>
       {isOpenSearchField ? <Search /> : ""}
       {isOpenDropDown ? <DropDown /> : ""}
-    </>
+    </div>
   );
 };
 

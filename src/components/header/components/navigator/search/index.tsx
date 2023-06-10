@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <>
       {!isMobile ? (
-        <div className="absolute top-44  w-full h-[58px] bg-[#101828] xl:visible invisible ">
+        <div className="absolute top-44  w-full h-[58px] bg-[#101828] xl:visible invisible z-40">
           <input
             className="absolute top-1/2 -translate-y-1/2 left-44 outline-none p-2.5 appearance-none bg-transparent w-52 h-5 font-[Helvetica] text-sm text-[#FFFFFF]  placeholder:text-[#475467] appearance-none caret-[#1989F0] "
             type="search"
