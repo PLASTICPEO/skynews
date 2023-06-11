@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./swiperCustomStyles.css";
 
-import Photo2 from "../../../assets/newsFeedsPhotoTest/Rectangle2.png";
-import Photo1 from "../../../assets/newsFeedsPhotoTest/Rectangle2.png";
+import Photo2 from "../../../../assets/newsFeedsPhotoTest/Rectangle2.png";
+import Photo1 from "../../../../assets/newsFeedsPhotoTest/Rectangle1.png";
 
 const NewsPhoto = () => {
   const photoArray: any = [Photo2, Photo1, Photo2, Photo1];

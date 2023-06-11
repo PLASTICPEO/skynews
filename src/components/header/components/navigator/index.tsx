@@ -14,34 +14,34 @@ const Navigator = () => {
 
   return (
     <div>
-      <div className="flex justify-between font-[Helvetica] h-12 xl:w-auto w-96 overflow-x-scroll overflow-y-hidden xl:p-0 p-4">
+      <div className="flex justify-between font-[Helvetica] h-12 xl:w-auto w-96 overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
         <div>
           <ul className="flex items-center justify-center space-x-6 font-[Helvica] text-[#475467] text-sm font-medium leading-4 cursor-pointer ">
-            <li className="h-8 hover:border-b-2 pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               მთავარი
             </li>
-            <li className="h-8 hover:border-b-2 pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               ყველა სიახლეს
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               პოლიტიკა
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               საზოგადოება
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               სამართალი
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               კონფლიქტები
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               ეკონომიკა
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               უცხოეთი
             </li>
-            <li className="h-8 hover:border-b-2  pb-3 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               ანალიტიკა
             </li>
             <li

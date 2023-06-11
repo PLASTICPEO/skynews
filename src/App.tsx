@@ -1,16 +1,12 @@
 import DefaultLayout from "./layouts/default";
 import Banner from "./components/banner";
-import NewsFeed from "./components/newsFeed";
-import SideNewsFeed from "./components/sideNewsFeed";
+import NewsFeedsContainer from "./components/NewsFeedsContainer";
 
 const App = () => {
   return (
-    <div className="w-full h-full bg-[#EAECF0]">
+    <div className="w-full h-full bg-[#EAECF0] pt-44">
       <DefaultLayout>
-        <div className="xl:grid xl:grid-cols-2 grid-cols-1 mt-44 xl:pt-5">
-          <NewsFeed />
-          <SideNewsFeed />
-        </div>
+        <NewsFeedsContainer />
         <Banner />
       </DefaultLayout>
     </div>

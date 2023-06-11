@@ -49,7 +49,7 @@ const MobileLanguages: React.FC = () => {
         <span className="material-symbols-outlined">expand_more</span>
       </div>
       {isDropdownOpen && (
-        <ul className="text-sm border rounded bg-[#FFFFFF]">
+        <ul className="absolute text-sm border rounded bg-[#FFFFFF]">
           {dropdownLanguages.map((language) => (
             <li
               key={language.id}

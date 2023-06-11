@@ -1,4 +1,4 @@
-import clockIcon from "../../../assets/newsFeedsPhotoTest/clockIcon.svg";
+import clockIcon from "../../../../assets/newsFeedsPhotoTest/clockIcon.svg";
 
 const Info = () => {
   return (

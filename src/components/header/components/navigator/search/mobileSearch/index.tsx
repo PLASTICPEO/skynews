@@ -7,7 +7,7 @@ const MobileSearch = () => {
 
   return (
     <div
-      className={`flex items-center absolute top-14 w-full h-28  bg-[#FFFFFF] ${
+      className={`flex items-center absolute left-0 top-0 w-full h-40 bg-[#FFFFFF] ${
         isOpenSearchField ? "visible" : "invisible"
       } z-40`}
     >
