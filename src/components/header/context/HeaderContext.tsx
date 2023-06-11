@@ -4,7 +4,7 @@ import { NavContextType } from "./context.types";
 
 export const HeaderContext: React.Context<NavContextType> =
   createContext<NavContextType>({
-    toggleMobileSearchField: () => {},
+    toggleSearchField: () => {},
     toggleDropDown: () => {},
     isOpenSearchField: false,
     isOpenDropDown: false,
@@ -14,7 +14,7 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
   const [isOpenSearchField, setIsOpenMobileSearchField] = useState(false);
   const [isOpenDropDown, setIsOpenDropDown] = useState<boolean>(false);
 
-  const toggleMobileSearchField = () => {
+  const toggleSearchField = () => {
     setIsOpenDropDown(false);
     setIsOpenMobileSearchField(!isOpenSearchField);
   };
@@ -29,7 +29,7 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
       value={{
         isOpenSearchField,
         isOpenDropDown,
-        toggleMobileSearchField,
+        toggleSearchField,
         toggleDropDown,
       }}
     >

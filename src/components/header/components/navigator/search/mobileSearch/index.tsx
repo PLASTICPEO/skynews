@@ -2,8 +2,7 @@ import { useContext } from "react";
 import { HeaderContext } from "../../../../context/HeaderContext";
 
 const MobileSearch = () => {
-  const { isOpenSearchField, toggleMobileSearchField } =
-    useContext(HeaderContext);
+  const { isOpenSearchField, toggleSearchField } = useContext(HeaderContext);
 
   return (
     <div
@@ -20,7 +19,7 @@ const MobileSearch = () => {
         placeholder="საძიებო სიტყვა..."
       />
       <button
-        onClick={toggleMobileSearchField}
+        onClick={toggleSearchField}
         className="w-28 h-10 text-[#1989F0] rounded-3xl"
       >
         გაუქმება

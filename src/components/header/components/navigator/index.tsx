@@ -9,7 +9,7 @@ const Navigator = () => {
     isOpenSearchField,
     isOpenDropDown,
     toggleDropDown,
-    toggleMobileSearchField,
+    toggleSearchField,
   } = useContext(HeaderContext);
 
   return (
@@ -56,8 +56,8 @@ const Navigator = () => {
         <div>
           {!isOpenSearchField ? (
             <div
-              onClick={() => toggleMobileSearchField()}
-              className="flex justify-center h-7 font-[Helvetica] w-[150px] ml-14 border-l-2 border-[#EAECF0] cursor-pointer"
+              onClick={() => toggleSearchField()}
+              className="flex justify-center h-7 font-[Helvetica] w-36 ml-14 border-l-2 border-[#EAECF0] cursor-pointer"
             >
               <span className="material-symbols-outlined  ml-7 text-[#475467]">
                 search
@@ -66,8 +66,8 @@ const Navigator = () => {
             </div>
           ) : (
             <div
-              onClick={() => toggleMobileSearchField()}
-              className="flex justify-center h-7 w-[150px] font-[Helvetica] ml-14 border-l-2 border-[#EAECF0] cursor-pointer"
+              onClick={() => toggleSearchField()}
+              className="flex justify-center h-7 w-36 font-[Helvetica] ml-14 border-l-2 border-[#EAECF0] cursor-pointer"
             >
               <img className="ml-7" src={searchClose} />
             </div>

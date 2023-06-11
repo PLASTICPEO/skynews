@@ -1,10 +1,12 @@
 import { ReactNode } from "react";
+
+
 export interface NavProviderProps {
     children: ReactNode;
 }
 
 export interface NavContextType {
-    toggleMobileSearchField: () => void;
+    toggleSearchField: () => void;
     toggleDropDown: () => void;
     isOpenSearchField: boolean;
     isOpenDropDown: boolean;
