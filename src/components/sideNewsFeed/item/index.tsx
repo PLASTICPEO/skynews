@@ -3,9 +3,9 @@ import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle 4.png";
 
 const Item = () => {
   return (
-    <div className="flex w-full bg-[#FFFFFF] border-b-2 mt-2">
+    <div className="flex w-full bg-[#FFFFFF] border-b-2 overflow-auto p-2">
       <img src={newsPhoto} className="w-36 h-36 bg-cover rounded-lg" />
-      <div className="p-4 ">
+      <div className="p-4">
         <div className="flex items-center space-x-2">
           <div className="flex space-x-2">
             <img src={clockIcon} alt="clockIcon" className="bg-cover" />

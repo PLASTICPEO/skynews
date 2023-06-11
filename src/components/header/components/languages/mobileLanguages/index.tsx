@@ -37,7 +37,7 @@ const MobileLanguages: React.FC = () => {
   );
 
   return (
-    <div className="xl:invisible visible absolute right-8 top-20 bg-[#FFFFFF] z-40">
+    <div className="xl:invisible visible bg-[#FFFFFF] z-40">
       <div
         className="flex items-center text-[#1989F0] text-sm bg-[#FFFFFF]"
         onClick={handleDropdownToggle}

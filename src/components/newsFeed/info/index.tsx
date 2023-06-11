@@ -2,7 +2,7 @@ import clockIcon from "../../../assets/newsFeedsPhotoTest/clockIcon.svg";
 
 const Info = () => {
   return (
-    <div className="flex items-center xl:space-x-2 mt-1 space-x-36">
+    <div className="flex items-center xl:space-x-2 mt-3 space-x-36">
       <div className="flex space-x-1">
         <img src={clockIcon} alt="" />
         <p className="text-[#667085] text-[Helvetica] text-sm font-medium">

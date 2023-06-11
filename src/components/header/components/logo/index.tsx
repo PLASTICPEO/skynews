@@ -1,11 +1,11 @@
 import webLogo from "../../../../assets/images/NEWSHUB.svg";
 
-const Hero = () => {
+const Logo = () => {
   return (
-    <div className="top-20">
+    <div>
       <img className="xl:w-96 w-60" src={webLogo} alt="logo" />
     </div>
   );
 };
 
-export default Hero;
+export default Logo;

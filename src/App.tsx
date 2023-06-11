@@ -1,18 +1,13 @@
 import DefaultLayout from "./layouts/default";
 import Banner from "./components/banner";
-import HeaderProvider from "./components/header/context/HeaderContext";
-import Header from "./pages/header";
-import NewsFeed from "./pages/newsFeed";
-import SideNewsFeed from "./pages/sideNewsFeed";
+import NewsFeed from "./components/newsFeed";
+import SideNewsFeed from "./components/sideNewsFeed";
 
 const App = () => {
   return (
     <div className="w-full h-full bg-[#EAECF0]">
       <DefaultLayout>
-        <HeaderProvider>
-          <Header />
-        </HeaderProvider>
-        <div className="grid grid-cols-2">
+        <div className="xl:grid xl:grid-cols-2 grid-cols-1 mt-44 xl:pt-5">
           <NewsFeed />
           <SideNewsFeed />
         </div>
