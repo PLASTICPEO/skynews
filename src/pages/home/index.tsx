@@ -1,13 +1,10 @@
-import NewsFeedsContainer from "../../components/NewsFeedsContainer";
-import Banner from "../../components/banner";
-import Section from "../../components/section-1";
-
+import NewsFeedsContainer from "../../components/newsFeedsContainer";
+import NewsFeedSectionContainer from "../../components/newsFeedSectionContainer";
 const Home = () => {
   return (
     <div>
       <NewsFeedsContainer />
-      <Banner />
-      <Section />
+      <NewsFeedSectionContainer />
     </div>
   );
 };

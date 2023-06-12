@@ -1,15 +1,22 @@
 import Item from "./item";
 import SideNewsFeedButton from "./button";
+import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle 4.png";
 
 const SideNewsFeed = () => {
   return (
-    <div className="pt-4 px-4 xl:mt-0 mt-6 h-[712px] bg-[#FFFFFF] rounded-lg shadow-sm">
+    <div className="pt-4 px-4 xl:mt-0 mt-6 h-[652px] bg-[#FFFFFF] rounded-lg shadow-sm">
       <div className="overflow-auto h-full relative">
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
+        <Item photo={newsPhoto} />
         <SideNewsFeedButton />
       </div>
     </div>

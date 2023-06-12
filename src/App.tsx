@@ -3,7 +3,7 @@ import Home from "./pages/home";
 
 const App = () => {
   return (
-    <div className="w-full h-full bg-[#EAECF0] pt-44">
+    <div className="bg-[#EAECF0] pt-44">
       <DefaultLayout>
         <Home />
       </DefaultLayout>
