@@ -3,9 +3,13 @@ import SideNewsFeed from "./sideNewsFeed";
 
 const NewsFeedsContainer = () => {
   return (
-    <div className="xl:grid xl:grid-cols-2 grid-cols-1 xl:pt-5 ">
-      <MainNewsFeed />
-      <SideNewsFeed />
+    <div className="xl:grid xl:grid-cols-3 grid-cols-1 gap-4 xl:pt-5 ">
+      <div className="xl:col-span-2">
+        <MainNewsFeed />
+      </div>
+      <div className="xl:col-span-1">
+        <SideNewsFeed />
+      </div>
     </div>
   );
 };
