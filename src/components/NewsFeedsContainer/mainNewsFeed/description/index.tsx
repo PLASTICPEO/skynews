@@ -1,10 +1,9 @@
-const Description = () => {
+import { DescriptionTypes } from "./description.types";
+
+const Description: React.FC<DescriptionTypes> = ({ font, text }) => {
   return (
     <div>
-      <p className="text-2xl font-[Helvetica] mt-3">
-        ავიაციის სააგენტო: საქართველო-რუსეთს შორის პირდაპირი რეგულარული ფრენები
-        არ ხორციელდება
-      </p>
+      <p className={`${font} font-[Helvetica] mt-1`}>{text}</p>
     </div>
   );
 };

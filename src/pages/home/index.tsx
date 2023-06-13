@@ -1,3 +1,4 @@
+import MayBeInterest from "../../components/newsFeedSectionContainer/mayBeInterest";
 import NewsFeedsContainer from "../../components/newsFeedsContainer";
 import NewsFeedSectionContainer from "../../components/newsFeedSectionContainer";
 const Home = () => {

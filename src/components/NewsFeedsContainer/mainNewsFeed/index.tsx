@@ -6,8 +6,13 @@ const MainNewsFeed = () => {
   return (
     <div className="flex flex-col p-4 bg-[#FFFFFF] rounded-lg shadow-sm">
       <NewsPhoto />
-      <Info />
-      <Description />
+      <Info time={"10"} category="ეკონომიკა" />
+      <Description
+        font={"text-2xl"}
+        text={
+          "ავიაციის სააგენტო: საქართველო-რუსეთს შორის პირდაპირი რეგულარული ფრენები არ ხორციელდება"
+        }
+      />
     </div>
   );
 };

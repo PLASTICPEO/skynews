@@ -4,11 +4,13 @@ import { ReactNode } from "react";
 
 const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <div>
-      <HeaderProvider>
-        <Header />
-      </HeaderProvider>
-      <div className="container mx-auto">{children}</div>
+    <div className="bg-[#EAECF0] pt-44">
+      <div>
+        <HeaderProvider>
+          <Header />
+        </HeaderProvider>
+        <div className="container mx-auto">{children}</div>
+      </div>
     </div>
   );
 };
