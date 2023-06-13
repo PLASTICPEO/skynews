@@ -1,4 +1,4 @@
 export interface DescriptionTypes {
-    font: string;
+    fontSize: string;
     text: string;
 }

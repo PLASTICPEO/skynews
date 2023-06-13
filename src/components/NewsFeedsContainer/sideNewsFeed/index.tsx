@@ -4,19 +4,50 @@ import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle 4.png";
 
 const SideNewsFeed = () => {
   return (
-    <div className="pt-4 px-4 xl:mt-0 mt-6 h-[652px] bg-[#FFFFFF] rounded-lg shadow-sm">
+    <div className="pt-4 px-4 xl:mt-0 mt-6 h-[627px] bg-[#FFFFFF] rounded-lg shadow-sm">
       <div className="overflow-auto h-full relative">
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
-        <Item photo={newsPhoto} />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
+        <Item
+          time={"19"}
+          category={"პოლიტიკა"}
+          photo={newsPhoto}
+          fontSize="xl:text-sm text-xs"
+          text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
+        />
         <SideNewsFeedButton />
       </div>
     </div>

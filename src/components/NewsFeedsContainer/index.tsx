@@ -1,6 +1,5 @@
 import MainNewsFeed from "./mainNewsFeed";
 import SideNewsFeed from "./sideNewsFeed";
-import Banner from "../banner";
 
 const NewsFeedsContainer = () => {
   return (
@@ -10,9 +9,6 @@ const NewsFeedsContainer = () => {
       </div>
       <div className="xl:col-span-4 col-span-4">
         <SideNewsFeed />
-      </div>
-      <div className="xl:col-span-10">
-        <Banner />
       </div>
     </div>
   );

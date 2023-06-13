@@ -8,21 +8,53 @@ import Description from "../../../../newsFeedsContainer/mainNewsFeed/description
 const TopNews = () => {
   return (
     <div className="bg-[#FFFFFF] rounded-lg">
-      <div>
+      <div className="mt-6">
         <img src={TopNewsPhoto} alt="" />
         <Info time={"24"} category="ბიზნესი" />
         <Description
-          font={"text-base"}
+          fontSize={"text-base"}
           text={
             "ენერგეტიკის სააგენტო: 2022-ის მარტთან შედარებით, რუსული ნავთობიდან შემოსავალი 43%-ით შემცირდა"
           }
         />
       </div>
       <div>
-        <Item photo={PhotoFromSection} />
-        <Item photo={PhotoFromSection} />
-        <Item photo={PhotoFromSection} />
-        <Item photo={PhotoFromSection} />
+        <Item
+          time={"24"}
+          category={"მსოფლიო"}
+          photo={PhotoFromSection}
+          fontSize={"xl:text-sm text-xs"}
+          text={
+            "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
+          }
+        />
+        <Item
+          time={"24"}
+          category={"მსოფლიო"}
+          photo={PhotoFromSection}
+          fontSize={"xl:text-sm text-xs"}
+          text={
+            "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
+          }
+        />
+        <Item
+          time={"24"}
+          category={"მსოფლიო"}
+          photo={PhotoFromSection}
+          fontSize={"xl:text-sm text-xs"}
+          text={
+            "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
+          }
+        />
+        <Item
+          time={"24"}
+          category={"მსოფლიო"}
+          photo={PhotoFromSection}
+          fontSize={"xl:text-sm text-xs"}
+          text={
+            "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
+          }
+        />
       </div>
     </div>
   );
