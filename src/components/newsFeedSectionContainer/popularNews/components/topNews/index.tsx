@@ -9,8 +9,13 @@ const TopNews = () => {
   return (
     <div className="bg-[#FFFFFF] rounded-lg">
       <div className="mt-6">
-        <img src={TopNewsPhoto} alt="" />
-        <Info time={"24"} category="ბიზნესი" />
+        <img src={TopNewsPhoto} alt="" className="w-full h-full bg-auto" />
+        <Info
+          time={"24"}
+          category="ბიზნესი"
+          timeStyle="text-xs"
+          categoryStyle="text-sm"
+        />
         <Description
           fontSize={"text-base"}
           text={

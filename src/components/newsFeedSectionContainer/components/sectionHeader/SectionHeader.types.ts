@@ -1,4 +1,4 @@
 export interface SectionHeaderTypes {
     title: string;
-    fontSize: string;
+    style: string;
 }
