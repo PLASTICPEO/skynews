@@ -1,3 +1,7 @@
+/* We will use this library for infinite scrolling */
+
+// import InfiniteScroll from "react-infinite-scroll-component";
+
 import Item from "../../newsFeedsContainer/sideNewsFeed/item";
 import SectionHeader from "../components/sectionHeader";
 

@@ -3,7 +3,7 @@ import SectionHeader from "../components/sectionHeader";
 
 const DayNews = () => {
   return (
-    <div className="sticky top-36 mt-4 p-4 bg-[#FFFFFF] rounded-lg shadow-sm">
+    <div className="sticky top-36 mt-4 p-4 bg-[#FFFFFF] rounded-lg shadow-sm xl:block hidden">
       <SectionHeader title={"დღის სიახლე"} fontSize={"text-base"} />
       <div>
         <Banner />

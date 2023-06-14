@@ -3,8 +3,8 @@ import clockIcon from "../../../../assets/newsFeedsPhotoTest/clockIcon.svg";
 
 const Info: React.FC<InfoTypes> = ({ time, category }) => {
   return (
-    <div className="flex items-center xl:space-x-2 mt-3 space-x-36">
-      <div className="flex space-x-1">
+    <div className="flex items-center xl:space-x-2 mt-3">
+      <div className="flex xl:space-x-1">
         <img src={clockIcon} alt="" />
         <p className="text-[#667085] text-[Helvetica] text-sm font-medium">
           {time} წუთის წინ
