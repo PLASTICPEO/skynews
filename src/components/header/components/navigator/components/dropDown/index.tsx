@@ -3,7 +3,7 @@ import { useDropDown } from "./hooks/useDropDown";
 const DropDown: React.FC = () => {
   const { items, handleLangClick } = useDropDown();
   return (
-    <div className="absolute top-36  xl:right-64 right-0  xl:w-44 w-full h-max  p-2.5 bg-[#FFFFFF] transition-opacity duration-300 ease-in-out transition-transform">
+    <div className="xl:w-44 w-full h-max  p-2.5 bg-[#FFFFFF] transition-opacity duration-300 ease-in-out transition-transform rounded-md shadow">
       {items && (
         <ul>
           {items.map((item) => (

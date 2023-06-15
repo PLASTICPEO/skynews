@@ -6,8 +6,11 @@ export interface NavProviderProps {
 }
 
 export interface NavContextType {
+    prevScrollPos: number;
+    isScrolled: boolean;
     toggleSearchField: () => void;
     toggleDropDown: () => void;
+    scrollPositionTop: () => void;
     isOpenSearchField: boolean;
     isOpenDropDown: boolean;
   }
