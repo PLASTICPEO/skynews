@@ -15,13 +15,13 @@ const Navigator = () => {
   } = useContext(HeaderContext);
 
   return (
-    <div>
-      <div className="flex justify-start font-[Helvetica] h-12 xl:w-auto overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
+    <>
+      <div className="flex justify-between font-[Helvetica] h-12 xl:w-auto overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
         <div>
           <ul
-            className={`flex items-center justify-center space-x-8 font-[Helvica] text-[#475467] ${
+            className={`flex items-center space-x-8 font-[Helvica] text-[#475467] ${
               prevScrollPos > 150 ? "text-xs" : "text-sm"
-            } font-medium leading-4 cursor-pointer`}
+            } font-medium  cursor-pointer`}
           >
             <li
               onClick={scrollPositionTop}
@@ -54,7 +54,7 @@ const Navigator = () => {
               ანალიტიკა
             </li>
             <li onClick={() => toggleDropDown()}>
-              <div className="flex items-center pb-3  hover:text-[#1989F0]">
+              <div className="flex items-center pb-4  hover:text-[#1989F0]">
                 <span>მეტი</span>
                 <span className="material-symbols-outlined">expand_more</span>
               </div>
@@ -77,7 +77,7 @@ const Navigator = () => {
             {!isOpenSearchField ? (
               <div
                 onClick={() => toggleSearchField()}
-                className="flex justify-end h-7 font-[Helvetica] w-28 ml-8 border-l-2 border-[#EAECF0] cursor-pointer"
+                className="flex justify-end h-7 font-[Helvetica] w-36 border-l-2 border-[#EAECF0] cursor-pointer"
               >
                 <span className="material-symbols-outlined text-[#475467]">
                   search
@@ -96,7 +96,7 @@ const Navigator = () => {
         )}
         {isOpenSearchField ? <Search /> : ""}
       </div>
-    </div>
+    </>
   );
 };
 

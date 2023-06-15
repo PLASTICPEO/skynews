@@ -7,7 +7,7 @@ const Logo = () => {
   const { prevScrollPos, scrollPositionTop } = useContext(HeaderContext);
 
   return (
-    <div className="flex space-x-12 mb-5 xl:ml-0 ml-4">
+    <div className={`flex justify-center  mb-5 xl:ml-0 ml-4`}>
       <img
         className={`${
           prevScrollPos > 150 ? "xl:w-36" : "xl:w-96"
