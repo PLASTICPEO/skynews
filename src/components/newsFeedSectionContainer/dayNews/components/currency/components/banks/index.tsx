@@ -9,6 +9,7 @@ const Banks = () => {
     handleBankClick,
     handleDropdownToggle,
   } = useBank();
+
   return (
     <div className="z-40 w-48 cursor-pointer m-4">
       <div

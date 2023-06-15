@@ -5,7 +5,7 @@ import Navigator from "./components/navigator";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF]  w-full z-40 xl:px-28">
+    <div className="fixed top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF]  w-full z-40">
       <div className="container m-auto">
         <div className="flex justify-between  items-center pt-5">
           <Languages />

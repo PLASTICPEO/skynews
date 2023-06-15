@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { BankTypes } from "../bank.types";
 
 export const useBank = () => {
@@ -13,10 +13,6 @@ export const useBank = () => {
       {
         id: "2",
         label: "თიბისი ბანკი",
-      },
-      {
-        id: "3",
-        label: "პროკრედიტ ბანკი",
       },
     ];
   

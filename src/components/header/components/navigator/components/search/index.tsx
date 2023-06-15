@@ -13,7 +13,7 @@ const Search = () => {
             placeholder="შეიყვანეთ საძიებო სიტყვა"
           />
           <button className="absolute top-1/2 -translate-y-1/2 right-44 w-28 h-10 bg-[#1989F0] text-[#FFFFFF] rounded-3xl">
-            მოძიება
+            მოძებნა
           </button>
         </div>
       ) : (
