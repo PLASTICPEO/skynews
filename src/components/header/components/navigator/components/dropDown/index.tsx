@@ -1,9 +1,9 @@
 import { useDropDown } from "./hooks/useDropDown";
 
-const DropDown: React.FC = () => {
+const DropDown = () => {
   const { items, handleLangClick } = useDropDown();
   return (
-    <div className="xl:w-44 w-full h-max  p-2.5 bg-[#FFFFFF] transition-opacity duration-300 ease-in-out transition-transform rounded-md shadow">
+    <div className="xl:w-44 w-full h-max  p-2.5 bg-[#FFFFFF] transition-opacity rounded-md shadow">
       {items && (
         <ul>
           {items.map((item) => (

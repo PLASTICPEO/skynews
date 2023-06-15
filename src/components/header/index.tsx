@@ -7,31 +7,30 @@ import Logo from "./components/logo";
 import Navigator from "./components/navigator";
 
 const Header = () => {
-  const { isScrolled } = useContext(HeaderContext);
+  const { prevScrollPos } = useContext(HeaderContext);
 
   return (
-    <div className="fixed top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] h-auto w-full z-40 xl:px-28">
+    <div className="fixed top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] h-auto w-full z-40 xl:px-28 shadow">
       <div className="container m-auto">
         <div className="flex justify-between  items-center pt-5">
-          {!isScrolled ? (
-            <>
-              <Languages /> <Social />
-            </>
-          ) : (
+          {prevScrollPos > 150 ? (
             ""
+          ) : (
+            <>
+              <Languages />
+              <Social />
+            </>
           )}
         </div>
-        <div className="xl:flex xl:justify-center">
-          {!isScrolled ? (
-            <>
-              <Logo />
-            </>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="xl:mt-0 mt-14">
-          <Navigator />
+        <div className={`${prevScrollPos > 150 ? "flex" : "block"}`}>
+          <div className="xl:flex xl:justify-center items-center">
+            <Logo />
+          </div>
+          <div
+            className={`xl:mt-0 mt-14 ${prevScrollPos > 150 ? "ml-4" : "ml-0"}`}
+          >
+            <Navigator />
+          </div>
         </div>
       </div>
     </div>

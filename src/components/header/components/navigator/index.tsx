@@ -6,7 +6,7 @@ import searchClose from "../../../../assets/images/searchFieldClose.svg";
 
 const Navigator = () => {
   const {
-    isScrolled,
+    prevScrollPos,
     isOpenSearchField,
     isOpenDropDown,
     toggleDropDown,
@@ -16,9 +16,13 @@ const Navigator = () => {
 
   return (
     <div>
-      <div className="flex justify-between font-[Helvetica] h-12 xl:w-auto overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
+      <div className="flex justify-start font-[Helvetica] h-12 xl:w-auto overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
         <div>
-          <ul className="flex items-center justify-center space-x-8 font-[Helvica] text-[#475467] text-sm font-medium leading-4 cursor-pointer ">
+          <ul
+            className={`flex items-center justify-center space-x-8 font-[Helvica] text-[#475467] ${
+              prevScrollPos > 150 ? "text-xs" : "text-sm"
+            } font-medium leading-4 cursor-pointer`}
+          >
             <li
               onClick={scrollPositionTop}
               className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]"
@@ -56,22 +60,26 @@ const Navigator = () => {
               </div>
               <div
                 className={`absolute ${
-                  isScrolled ? "top-26" : "top-36"
-                }   xl:right-64 right-0`}
+                  prevScrollPos > 150
+                    ? "top-16 xl:right-20"
+                    : "top-36 xl:right-64"
+                }    right-0`}
               >
                 {isOpenDropDown ? <DropDown /> : ""}
               </div>
             </li>
           </ul>
         </div>
-        {!isScrolled ? (
+        {prevScrollPos > 150 ? (
+          ""
+        ) : (
           <div>
             {!isOpenSearchField ? (
               <div
                 onClick={() => toggleSearchField()}
-                className="flex justify-end h-7 font-[Helvetica] w-36 border-l-2 border-[#EAECF0] cursor-pointer"
+                className="flex justify-end h-7 font-[Helvetica] w-28 ml-8 border-l-2 border-[#EAECF0] cursor-pointer"
               >
-                <span className="material-symbols-outlined   text-[#475467]">
+                <span className="material-symbols-outlined text-[#475467]">
                   search
                 </span>
                 <span className="text-[#475467]">ძიება</span>
@@ -85,8 +93,6 @@ const Navigator = () => {
               </div>
             )}
           </div>
-        ) : (
-          ""
         )}
         {isOpenSearchField ? <Search /> : ""}
       </div>
