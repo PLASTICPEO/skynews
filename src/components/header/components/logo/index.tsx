@@ -8,19 +8,21 @@ const Logo = () => {
 
   return (
     <div
-      className={`flex items-center ${
+      className={`flex xl:items-center xl:justify-center justify-between xl:mt-0 mt-10 ${
         prevScrollPos > 150 ? "mb-2" : "mb-12"
       } xl:ml-0 ml-4 mt-2`}
     >
       <img
         className={`${
           prevScrollPos > 150 ? "xl:w-60" : "xl:w-96"
-        } w-10 cursor-pointer`}
+        } w-60 cursor-pointer`}
         src={webLogo}
         alt="logo"
         onClick={scrollPositionTop}
       />
-      <MobileLanguages />
+      <div>
+        <MobileLanguages />
+      </div>
     </div>
   );
 };

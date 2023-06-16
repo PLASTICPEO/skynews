@@ -23,7 +23,7 @@ const Languages = () => {
 
   return (
     <>
-      <ul className=" xl:visible invisible flex space-x-5 font-[Helvetica] font-medium text-xs text-[#475467] cursor-pointer">
+      <ul className=" xl:flex hidden  space-x-5 font-[Helvetica] font-medium text-xs text-[#475467] cursor-pointer">
         {lang.map((language) => (
           <li
             key={language.id}

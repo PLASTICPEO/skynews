@@ -23,7 +23,7 @@ const Banks = () => {
         <span className="material-symbols-outlined">expand_more</span>
       </div>
       {isDropdownOpen && (
-        <ul className="text-sm border rounded p-2 bg-[#9FB4BC]">
+        <ul className="absolute w-48 text-sm border rounded p-2 bg-[#9FB4BC]">
           {dropdownLanguages.map((bank) => (
             <li
               key={bank.id}

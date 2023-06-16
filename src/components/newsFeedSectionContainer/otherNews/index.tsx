@@ -11,7 +11,11 @@ import Loader from "./components/loader";
 const OtherNews = () => {
   return (
     <div className="p-4 mt-4 rounded-lg bg-[#FFFFFF] shadow-sm ">
-      <SectionHeader title={"სხვა სიახლები"} style={"text-base"} />
+      <SectionHeader
+        title={"სხვა სიახლები"}
+        style={"text-base"}
+        buttonText="ყველა სიახლე"
+      />
       <div>
         <Item
           time={"12"}

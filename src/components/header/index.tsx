@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed transition-all ease-in-out duration-500 
+      className={`fixed transition-all ease-in-out duration-150 
        top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 shadow  ${
          prevScrollPos > 150 ? "h-28" : "h-44"
        }`}
@@ -19,16 +19,12 @@ const Header = () => {
       <div
         className={`container m-auto transition-all ease-in-out duration-500`}
       >
-        <div className="flex justify-between pt-5">
+        <div className="flex justify-between">
           <Languages />
-          <Logo />
           <Social />
         </div>
-        <div>
-          <div className="xl:mt-0 mt-14">
-            <Navigator />
-          </div>
-        </div>
+        <Logo />
+        <Navigator />
       </div>
     </div>
   );

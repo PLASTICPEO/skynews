@@ -14,7 +14,7 @@ const TopNews = () => {
           time={"24"}
           category="ბიზნესი"
           timeStyle="text-xs"
-          categoryStyle="text-sm"
+          categoryStyle="text-xs"
         />
         <Description
           fontSize={"text-base"}

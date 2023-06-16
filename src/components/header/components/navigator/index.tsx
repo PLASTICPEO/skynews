@@ -16,10 +16,10 @@ const Navigator = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center font-[Helvetica] h-12 xl:w-auto overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
+      <div className="flex xl:justify-between items-center font-[Helvetica] h-12 overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
         <div>
           <ul
-            className="flex space-x-8 font-[Helvica] text-[#475467] text-sm
+            className="flex xl:space-x-8 space-x-4 xl:w-full w-[1000px] font-[Helvica] text-[#475467] text-sm
             font-medium  cursor-pointer"
           >
             <li
@@ -60,7 +60,7 @@ const Navigator = () => {
               <div
                 className={`absolute ${
                   prevScrollPos > 150 ? "top-28" : "top-44"
-                } xl:right-64 right-0`}
+                } xl:right-64`}
               >
                 {isOpenDropDown ? <DropDown /> : ""}
               </div>

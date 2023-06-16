@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface Language {
   id: string;
@@ -12,7 +12,7 @@ const MobileLanguages = () => {
   const lang: Language[] = [
     {
       id: "1",
-      label: "ქარ",
+      label: "GE",
     },
     {
       id: "2",

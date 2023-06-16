@@ -6,12 +6,15 @@ const MainNewsFeed = () => {
   return (
     <div className="flex flex-col p-4 bg-[#FFFFFF] rounded-lg shadow-sm">
       <NewsPhoto />
-      <Info time={"10"} category="ეკონომიკა" />
+      <Info
+        time="10"
+        category="ეკონომიკა"
+        timeStyle="text-sm"
+        categoryStyle="text-xs"
+      />
       <Description
-        font={"text-2xl"}
-        text={
-          "ავიაციის სააგენტო: საქართველო-რუსეთს შორის პირდაპირი რეგულარული ფრენები არ ხორციელდება"
-        }
+        fontSize="text-2xl"
+        text="ავიაციის სააგენტო: საქართველო-რუსეთს შორის პირდაპირი რეგულარული ფრენები არ ხორციელდება"
       />
     </div>
   );
