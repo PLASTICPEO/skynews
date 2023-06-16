@@ -10,29 +10,22 @@ const Header = () => {
   const { prevScrollPos } = useContext(HeaderContext);
 
   return (
-    <div className="fixed top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] h-auto w-full z-40 shadow transition-all">
-      <div className="container m-auto">
-        <div className="flex justify-between items-center pt-5">
-          {prevScrollPos > 150 ? (
-            ""
-          ) : (
-            <>
-              <Languages />
-              <Social />
-            </>
-          )}
+    <div
+      className={`fixed transition-all ease-in-out duration-500 
+       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 shadow  ${
+         prevScrollPos > 150 ? "h-28" : "h-44"
+       }`}
+    >
+      <div
+        className={`container m-auto transition-all ease-in-out duration-500`}
+      >
+        <div className="flex justify-between pt-5">
+          <Languages />
+          <Logo />
+          <Social />
         </div>
-        <div
-          className={`${
-            prevScrollPos > 150 ? "flex justify-end" : "block"
-          } justify-between`}
-        >
-          <div className="xl:flex  xl:justify-center items-center">
-            <Logo />
-          </div>
-          <div
-            className={`xl:mt-0 mt-14 ${prevScrollPos > 150 ? "ml-4" : "ml-0"}`}
-          >
+        <div>
+          <div className="xl:mt-0 mt-14">
             <Navigator />
           </div>
         </div>

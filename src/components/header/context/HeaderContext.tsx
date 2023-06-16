@@ -44,6 +44,7 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
+      setIsOpenMobileSearchField(false);
       setIsOpenDropDown(false);
       const currentScrollPos = window.pageYOffset;
       setIsScrolled(currentScrollPos > prevScrollPos);
@@ -51,8 +52,6 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    console.log(isScrolled, prevScrollPos);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

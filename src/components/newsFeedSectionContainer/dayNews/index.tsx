@@ -7,7 +7,7 @@ import Currency from "./components/currency";
 
 const DayNews = () => {
   return (
-    <div className="sticky top-20 mt-4 p-4 bg-[#FFFFFF] rounded-lg shadow-sm xl:block hidden">
+    <div className="sticky top-32 mt-4 p-4 bg-[#FFFFFF] rounded-lg shadow-sm xl:block hidden">
       <SectionHeader title={"დღის სიახლე"} style={"text-base"} />
       <div className="overflow-auto h-[620px]">
         <SectionItem

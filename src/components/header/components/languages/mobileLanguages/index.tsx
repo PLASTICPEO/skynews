@@ -5,7 +5,7 @@ interface Language {
   label: string;
 }
 
-const MobileLanguages: React.FC = () => {
+const MobileLanguages = () => {
   const [selectedLang, setSelectedLang] = useState<string | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -37,7 +37,7 @@ const MobileLanguages: React.FC = () => {
   );
 
   return (
-    <div className="xl:invisible visible bg-[#FFFFFF] z-40">
+    <div className="xl:hidden block bg-[#FFFFFF] z-40">
       <div
         className="flex items-center text-[#1989F0] text-sm bg-[#FFFFFF]"
         onClick={handleDropdownToggle}

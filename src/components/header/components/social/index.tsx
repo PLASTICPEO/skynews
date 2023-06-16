@@ -9,7 +9,7 @@ const Social = () => {
           <li className="hover:text-[#1989F0]">ქვიზები</li>
           <li className="hover:text-[#1989F0]">ფოტო გალერეა</li>
         </ul>
-        <div className="ml-4 flex space-x-2">
+        <div className="ml-4 flex space-x-2 h-4">
           <img
             className="hover:text-[#1989F0]"
             src={fecabookIcon}
