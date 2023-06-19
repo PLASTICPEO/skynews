@@ -10,42 +10,42 @@ const SideNewsFeed = () => {
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
-          fontSize="xl:text-sm text-xs"
+          style="xl:text-sm text-xs"
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <SideNewsFeedButton />

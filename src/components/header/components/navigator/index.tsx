@@ -3,6 +3,7 @@ import Search from "./components/search";
 import { useContext } from "react";
 import { HeaderContext } from "../../context/HeaderContext";
 import searchClose from "../../../../assets/images/searchFieldClose.svg";
+import { Link } from "react-router-dom";
 
 const Navigator = () => {
   const {
@@ -22,18 +23,22 @@ const Navigator = () => {
             className="flex xl:space-x-8 space-x-4 xl:w-full w-[1000px] font-[Helvica] text-[#475467] text-sm
             font-medium  cursor-pointer"
           >
-            <li
-              onClick={scrollPositionTop}
-              className="h-8 hover:border-b-2 hover:border-blue-400  hover:border-[#1989F0] hover:text-[#1989F0]"
-            >
-              მთავარი
-            </li>
+            <Link to="/">
+              <li
+                onClick={scrollPositionTop}
+                className="h-8 hover:border-b-2 hover:border-blue-400  hover:border-[#1989F0] hover:text-[#1989F0]"
+              >
+                მთავარი
+              </li>
+            </Link>
             <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               ყველა სიახლეს
             </li>
-            <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
-              პოლიტიკა
-            </li>
+            <Link to="/politic">
+              <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
+                პოლიტიკა
+              </li>
+            </Link>
             <li className="h-8 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]">
               საზოგადოება
             </li>
@@ -59,10 +64,10 @@ const Navigator = () => {
               </div>
               <div
                 className={`absolute ${
-                  prevScrollPos > 150 ? "top-28" : "top-44"
+                  prevScrollPos > 50 ? "top-28" : "top-44"
                 } xl:right-64`}
               >
-                {isOpenDropDown ? <DropDown /> : ""}
+                {isOpenDropDown ? <DropDown /> : null}
               </div>
             </li>
           </ul>
@@ -86,7 +91,7 @@ const Navigator = () => {
           </div>
         )}
       </div>
-      {isOpenSearchField ? <Search /> : ""}
+      {isOpenSearchField ? <Search /> : null}
     </>
   );
 };

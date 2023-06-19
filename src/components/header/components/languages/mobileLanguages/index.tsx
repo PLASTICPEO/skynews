@@ -37,7 +37,7 @@ const MobileLanguages = () => {
   );
 
   return (
-    <div className="xl:hidden block bg-[#FFFFFF] z-40">
+    <div className="xl:hidden block bg-[#FFFFFF] ml-20 z-40">
       <div
         className="flex items-center text-[#1989F0] text-sm bg-[#FFFFFF]"
         onClick={handleDropdownToggle}

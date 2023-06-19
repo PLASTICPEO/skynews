@@ -13,7 +13,7 @@ const Header = () => {
     <div
       className={`fixed transition-all ease-in-out duration-150 
        top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 shadow  ${
-         prevScrollPos > 150 ? "h-28" : "h-44"
+         prevScrollPos > 50 ? "h-28" : "h-44"
        }`}
     >
       <div

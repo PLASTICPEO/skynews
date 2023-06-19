@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import DefaultLayout from "./layouts/default";
 import Home from "./pages/home";
+import Politic from "./pages/politic";
 
 const App = () => {
   return (
@@ -11,6 +12,14 @@ const App = () => {
         element={
           <DefaultLayout>
             <Home />
+          </DefaultLayout>
+        }
+      />
+      <Route
+        path="/politic"
+        element={
+          <DefaultLayout>
+            <Politic />
           </DefaultLayout>
         }
       />

@@ -8,13 +8,13 @@ const Logo = () => {
 
   return (
     <div
-      className={`flex xl:items-center xl:justify-center justify-between xl:mt-0 mt-10 ${
-        prevScrollPos > 150 ? "mb-2" : "mb-12"
-      } xl:ml-0 ml-4 mt-2`}
+      className={`flex xl:items-center xl:justify-center xl:mt-0 mt-10 ${
+        prevScrollPos > 50 ? "mb-2" : "mb-12"
+      } xl:ml-0 ml-4 xl:mt-2`}
     >
       <img
         className={`${
-          prevScrollPos > 150 ? "xl:w-60" : "xl:w-96"
+          prevScrollPos > 50 ? "xl:w-60" : "xl:w-96"
         } w-60 cursor-pointer`}
         src={webLogo}
         alt="logo"

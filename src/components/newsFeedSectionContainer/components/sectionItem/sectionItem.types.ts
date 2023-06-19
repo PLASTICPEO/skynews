@@ -4,6 +4,7 @@ export interface SectionItemTypes {
     category: string;
     style: string;
     text: string;
+    title?: string;
     styleTime: string;
     styleCategory: string;
   }
