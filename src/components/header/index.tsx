@@ -1,31 +1,25 @@
 import { useContext } from "react";
 import { HeaderContext } from "./context/HeaderContext";
 
-import Languages from "./components/languages";
-import Social from "./components/social";
-import Logo from "./components/logo";
-import Navigator from "./components/navigator";
+import HeaderTop from "./components/headerTop";
+import HeaderMiddle from "./components/headerMiddle";
+import HeaderBottom from "./components/headerBottom";
+import Container from "./components/container";
 
 const Header = () => {
   const { prevScrollPos } = useContext(HeaderContext);
+  const HeaderSize = prevScrollPos > 50 ? "h-16" : "h-44";
 
   return (
     <div
       className={`fixed transition-all ease-in-out duration-150 
-       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 shadow  ${
-         prevScrollPos > 50 ? "h-28" : "h-44"
-       }`}
+       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-bottom  ${HeaderSize}`}
     >
-      <div
-        className={`container m-auto transition-all ease-in-out duration-500`}
-      >
-        <div className="flex justify-between">
-          <Languages />
-          <Social />
-        </div>
-        <Logo />
-        <Navigator />
-      </div>
+      <Container>
+        {prevScrollPos < 50 ? <HeaderTop /> : null}
+        <HeaderMiddle />
+        <HeaderBottom />
+      </Container>
     </div>
   );
 };

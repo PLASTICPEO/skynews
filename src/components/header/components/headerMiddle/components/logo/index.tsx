@@ -1,28 +1,24 @@
-import { HeaderContext } from "../../context/HeaderContext";
+import { HeaderContext } from "../../../../context/HeaderContext";
 import { useContext } from "react";
-import webLogo from "../../../../assets/images/NEWSHUB.svg";
-import MobileLanguages from "../languages/mobileLanguages";
+import webLogo from "../../../../../../assets/images/NEWSHUB.svg";
 
 const Logo = () => {
   const { prevScrollPos, scrollPositionTop } = useContext(HeaderContext);
 
   return (
     <div
-      className={`flex xl:items-center xl:justify-center xl:mt-0 mt-10 ${
+      className={`flex  xl:items-center  xl:mt-0 mt-10 ${
         prevScrollPos > 50 ? "mb-2" : "mb-12"
       } xl:ml-0 ml-4 xl:mt-2`}
     >
       <img
         className={`${
-          prevScrollPos > 50 ? "xl:w-60" : "xl:w-96"
-        } w-60 cursor-pointer`}
+          prevScrollPos > 50 ? "xl:w-36" : "xl:w-96"
+        } w-60 cursor-pointer m-auto`}
         src={webLogo}
         alt="logo"
         onClick={scrollPositionTop}
       />
-      <div>
-        <MobileLanguages />
-      </div>
     </div>
   );
 };

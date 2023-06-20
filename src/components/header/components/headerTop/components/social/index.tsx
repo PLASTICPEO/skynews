@@ -1,5 +1,5 @@
-import fecabookIcon from "../../../../assets/images/facebookIcon.svg";
-import instagramIcon from "../../../../assets/images/instagramICon.svg";
+import fecabookIcon from "../../../../../../assets/images/facebookIcon.svg";
+import instagramIcon from "../../../../../../assets/images/instagramICon.svg";
 
 const Social = () => {
   return (
