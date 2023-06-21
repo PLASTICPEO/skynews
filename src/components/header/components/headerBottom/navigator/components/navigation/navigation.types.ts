@@ -1,3 +1,3 @@
 export interface NavigationPropsTypes {
-    items: { name: string; href: string }[];
+    navItems: { name: string; href: string }[];
 }

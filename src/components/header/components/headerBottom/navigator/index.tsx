@@ -1,11 +1,22 @@
 import Search from "./components/search";
 import Navigation from "./components/navigation";
-import { NavigatorPropsTypes } from "./navigator.types";
 
-const Navigator: React.FC<NavigatorPropsTypes> = ({ navigation }) => {
+const Navigator: React.FC = () => {
+  const navItem = [
+    { name: "მთავარი", href: "/" },
+    { name: "ყველა სიახლე", href: "" },
+    { name: "პოლიტიკა", href: "/politic" },
+    { name: "საზოგადოება", href: "" },
+    { name: "სამართალი", href: "" },
+    { name: "კონფლიქტები", href: "" },
+    { name: "ეკონომიკა", href: "" },
+    { name: "უცხოეთი", href: "" },
+    { name: "ანალიტიკა", href: "" },
+  ];
+
   return (
     <div className="flex font-primary h-12 overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
-      <Navigation items={navigation} />
+      <Navigation navItems={navItem} />
       <Search />
     </div>
   );

@@ -1,3 +1,3 @@
-export interface NavigatorPropsTypes {
-    navigation: { name: string; href: string }[];
-}
+// export interface NavigatorPropsTypes {
+//     navigation: { name: string; href: string }[];
+// }

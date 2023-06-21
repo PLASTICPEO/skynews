@@ -7,7 +7,7 @@ const More = () => {
   return (
     <div
       onClick={() => toggleDropDown()}
-      className="flex pb-2 hover:text-[#1989F0] ml-8"
+      className="flex  hover:text-[#1989F0] ml-8"
     >
       <span>მეტი</span>
       <span className="material-symbols-outlined">expand_more</span>

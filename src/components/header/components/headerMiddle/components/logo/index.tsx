@@ -7,9 +7,9 @@ const Logo = () => {
 
   return (
     <div
-      className={`flex  xl:items-center  xl:mt-0 mt-10 ${
+      className={`flex xl:items-center  xl:mt-0 mt-10 ${
         prevScrollPos > 50 ? "mb-2" : "mb-12"
-      } xl:ml-0 ml-4 xl:mt-2`}
+      } xl:ml-0 ml-4`}
     >
       <img
         className={`${
