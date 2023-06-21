@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div
       className={`fixed transition-all ease-in-out duration-150 
-       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-bottom  ${HeaderSize}`}
+       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-b-2  ${HeaderSize}`}
     >
       <Container>
         {prevScrollPos < 50 ? <HeaderTop /> : null}

@@ -9,21 +9,15 @@ import SearchButton from "./components/searchButton";
 import Nav from "./components/nav";
 
 const Navigation: React.FC<NavigationPropsTypes> = ({ navItems }) => {
-  const { prevScrollPos, isOpenDropDown } = useContext(HeaderContext);
-
-  const dropDownPosition =
-    prevScrollPos > 50 ? "top-16 xl:right-14" : "top-44 xl:right-48";
+  const { prevScrollPos } = useContext(HeaderContext);
 
   return (
-    <div className="flex items-center justify-between w-full font-[Helvica] text-[#475467] text-sm font-medium cursor-pointer">
-      <div className="flex">
+    <div className="flex justify-between w-full font-[Helvica] text-[#475467] text-sm font-medium cursor-pointer">
+      <div className="flex items-center">
         <Nav navItems={navItems} />
         <More />
       </div>
       {prevScrollPos < 50 ? <SearchButton /> : null}
-      <div className={`absolute ${dropDownPosition}`}>
-        {isOpenDropDown ? <DropDown /> : null}
-      </div>
     </div>
   );
 };
