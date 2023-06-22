@@ -3,7 +3,7 @@ import Social from "./components/social";
 
 const HeaderTop = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between mt-4">
       <Languages />
       <Social />
     </div>

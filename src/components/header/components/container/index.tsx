@@ -7,8 +7,8 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div
       className={`${
-        prevScrollPos > 50 ? "flex  justify-between mt-4" : "block mt-6"
-      } container m-auto transition-all ease-in-out duration-500 `}
+        prevScrollPos > 50 ? "flex  justify-between mt-4" : "block"
+      } container h-full m-auto transition-all ease-in-out duration-500 `}
     >
       {children}
     </div>

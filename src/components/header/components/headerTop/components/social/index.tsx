@@ -11,7 +11,7 @@ const Social = () => {
           <li className="hover:text-[#1989F0]">ფოტო გალერეა</li>
           <div className="h-1 w-1 rounded-full bg-[#EAECF0] mr-2"></div>
         </ul>
-        <div className="ml-4 flex space-x-2 h-4 cursor-pointer">
+        <div className="ml-4 flex items-center space-x-2 h-4 cursor-pointer">
           <a
             href="https://www.facebook.com/"
             target="_blank"

@@ -2,8 +2,6 @@ import { NavigationPropsTypes } from "./navigation.types";
 import { HeaderContext } from "../../../../../context/HeaderContext";
 import { useContext } from "react";
 
-import DropDown from "../dropDown";
-
 import More from "./components/more";
 import SearchButton from "./components/searchButton";
 import Nav from "./components/nav";
