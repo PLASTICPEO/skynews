@@ -11,7 +11,7 @@ const NavItem: React.FC<NavItemPropsTypes> = ({ href, name }) => {
       <Link to={href}>
         <li
           onClick={scrollPositionTop}
-          className="h-10 pb-10 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]"
+          className="h-10 hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]"
         >
           {name}
         </li>
