@@ -11,7 +11,7 @@ const Nav: React.FC<NavigationPropsTypes> = ({ navItems }) => {
 
   return (
     <div>
-      <ul className={`flex  space-x-4 xl:w-full w-[1000px] ${listClass}`}>
+      <ul className={`flex h-12 space-x-4 xl:w-full w-[1000px]  ${listClass}`}>
         {navItems.map((item, index) => (
           <NavItem key={index} href={item.href} name={item.name} />
         ))}

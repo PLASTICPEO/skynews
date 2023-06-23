@@ -8,12 +8,12 @@ import Container from "./components/container";
 
 const Header = () => {
   const { prevScrollPos } = useContext(HeaderContext);
-  const HeaderSize = prevScrollPos > 50 ? "h-16" : "h-44";
+  const HeaderSize = prevScrollPos > 50 ? "h-16" : "h-42";
 
   return (
     <div
       className={`fixed transition-all ease-in-out duration-150 
-       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-b-2  ${HeaderSize}`}
+       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-b-1  ${HeaderSize}`}
     >
       <Container>
         {prevScrollPos < 50 ? <HeaderTop /> : null}

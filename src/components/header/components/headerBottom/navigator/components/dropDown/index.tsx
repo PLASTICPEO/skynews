@@ -1,9 +1,17 @@
+import { useContext } from "react";
+import { HeaderContext } from "../../../../../context/HeaderContext";
 import { useDropDown } from "./hooks/useDropDown";
 
 const DropDown = () => {
+  const { prevScrollPos } = useContext(HeaderContext);
   const { items, handleLangClick } = useDropDown();
+
+  const dropDownPosition =
+    prevScrollPos > 50 ? "top-10 right-0" : "top-12 left-2/3 -translate-x-1/2";
   return (
-    <div className="xl:w-44 w-full h-max  p-2.5 bg-[#FFFFFF] transition-opacity rounded-md shadow">
+    <div
+      className={`absolute  ${dropDownPosition} xl:w-44 w-full h-max p-2.5 bg-[#FFFFFF] transition-opacity rounded-md shadow z-50`}
+    >
       {items && (
         <ul>
           {items.map((item) => (

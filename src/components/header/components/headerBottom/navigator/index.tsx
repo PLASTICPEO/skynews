@@ -15,7 +15,7 @@ const Navigator: React.FC = () => {
   ];
 
   return (
-    <div className="flex font-primary h-12 overflow-x-scroll overflow-y-hidden xl:p-0 px-4">
+    <div className="flex font-primary h-12  xl:p-0 px-4">
       <Navigation navItems={navItems} />
       <Search />
     </div>
