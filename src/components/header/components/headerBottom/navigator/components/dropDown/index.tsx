@@ -10,7 +10,7 @@ const DropDown = () => {
     prevScrollPos > 50 ? "top-11 right-0" : "top-12 left-2/3 -translate-x-1/2";
   return (
     <div
-      className={`absolute  ${dropDownPosition} xl:w-44 w-full h-max p-2.5 bg-[#FFFFFF] font-Helvetica transition-opacity rounded-md shadow z-50`}
+      className={`absolute  ${dropDownPosition} xl:w-44 w-full h-max py-2.5 bg-[#FFFFFF] font-Helvetica transition-opacity rounded-md shadow z-50`}
     >
       {items && (
         <ul>
