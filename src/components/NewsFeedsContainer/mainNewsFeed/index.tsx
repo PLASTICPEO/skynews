@@ -10,10 +10,10 @@ const MainNewsFeed = () => {
         time="10"
         category="ეკონომიკა"
         timeStyle="text-sm"
-        categoryStyle="text-xs"
+        categoryStyle="text-sm"
       />
       <Description
-        fontSize="text-2xl"
+        style="text-2xl"
         text="ავიაციის სააგენტო: საქართველო-რუსეთს შორის პირდაპირი რეგულარული ფრენები არ ხორციელდება"
       />
     </div>

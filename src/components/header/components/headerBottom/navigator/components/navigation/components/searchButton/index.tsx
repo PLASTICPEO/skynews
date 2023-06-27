@@ -10,7 +10,7 @@ const SearchButton = () => {
   return (
     <div
       onClick={() => toggleSearchField()}
-      className="flex justify-end  h-8 font-[Helvetica] w-28 border-l-2 border-[#EAECF0] cursor-pointer"
+      className="flex justify-end items-center text-lg leading-4 order-1 font-medium not-italic font-case font-Helvetica  h-8 font-[Helvetica] w-28 border-l-2 border-[#EAECF0] cursor-pointer"
     >
       <img
         src={!isOpenSearchField ? searchIcon : searchClose}
@@ -18,7 +18,7 @@ const SearchButton = () => {
       />
 
       {!isOpenSearchField ? (
-        <span className="text-[#475467] ml-2">ძიება</span>
+        <span className="flex items-center text-[#475467] ml-2">ძიება</span>
       ) : null}
     </div>
   );

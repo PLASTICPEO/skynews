@@ -8,7 +8,7 @@ import Container from "./components/container";
 
 const Header = () => {
   const { prevScrollPos } = useContext(HeaderContext);
-  const HeaderSize = prevScrollPos > 50 ? "h-16" : "h-42";
+  const HeaderSize = prevScrollPos > 50 ? "h-[68px]" : "h-42";
 
   return (
     <div

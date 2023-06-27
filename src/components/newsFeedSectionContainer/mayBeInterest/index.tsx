@@ -21,7 +21,7 @@ const MayBeInterest: React.FC = () => {
           }
           style={"xl:text-base text-sm"}
           styleTime="text-base"
-          styleCategory="text-xs"
+          styleCategory="text-sm"
         />
         <SectionItem
           photo={mayBeInterestPhoto}

@@ -7,10 +7,10 @@ const DropDown = () => {
   const { items, handleLangClick } = useDropDown();
 
   const dropDownPosition =
-    prevScrollPos > 50 ? "top-10 right-0" : "top-12 left-2/3 -translate-x-1/2";
+    prevScrollPos > 50 ? "top-11 right-0" : "top-12 left-2/3 -translate-x-1/2";
   return (
     <div
-      className={`absolute  ${dropDownPosition} xl:w-44 w-full h-max p-2.5 bg-[#FFFFFF] transition-opacity rounded-md shadow z-50`}
+      className={`absolute  ${dropDownPosition} xl:w-44 w-full h-max p-2.5 bg-[#FFFFFF] font-Helvetica transition-opacity rounded-md shadow z-50`}
     >
       {items && (
         <ul>
@@ -18,7 +18,7 @@ const DropDown = () => {
             <li
               key={item.id}
               onClick={() => handleLangClick(item.id)}
-              className="pl-5 pt-4 h-12 hover:accent-[#1989F0] hover:bg-[#DCEDF9] hover:text-[#1989F0] cursor-pointer"
+              className="pl-5 pt-4 h-12 hover:accent-[#1989F0]   hover:bg-[#DCEDF9] hover:text-[#1989F0] cursor-pointer"
             >
               {item.label}
             </li>

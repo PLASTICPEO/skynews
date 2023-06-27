@@ -7,11 +7,13 @@ import NavItem from "../navItems";
 const Nav: React.FC<NavigationPropsTypes> = ({ navItems }) => {
   const { prevScrollPos } = useContext(HeaderContext);
 
-  const listClass = prevScrollPos > 50 ? "xl:space-x-7" : "xl:space-x-10";
+  const listClass = prevScrollPos > 50 ? "xl:space-x-8" : "xl:space-x-10";
 
   return (
     <div>
-      <ul className={`flex h-12 space-x-4 xl:w-full w-[1000px]  ${listClass}`}>
+      <ul
+        className={`flex xl:w-full text-lg font-medium order-1 not-italic font-case font-Helvetica   ${listClass}`}
+      >
         {navItems.map((item, index) => (
           <NavItem key={index} href={item.href} name={item.name} />
         ))}

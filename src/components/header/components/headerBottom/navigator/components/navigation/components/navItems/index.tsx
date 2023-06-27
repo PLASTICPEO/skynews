@@ -6,14 +6,17 @@ import { NavItemPropsTypes } from "./navItems.types";
 
 const NavItem: React.FC<NavItemPropsTypes> = ({ href, name }) => {
   const { scrollPositionTop, prevScrollPos } = useContext(HeaderContext);
-  const itemsHeight = prevScrollPos < 50 ? "h-12" : "h-10";
+  const itemsHeight =
+    prevScrollPos > 50
+      ? "border-0"
+      : "hover:border-blue-400 hover:border-b-2 hover:border-[#1989F0]";
 
   if (href) {
     return (
       <Link to={href}>
         <li
           onClick={scrollPositionTop}
-          className={`${itemsHeight} hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]`}
+          className={`h-12  ${itemsHeight}  hover:text-[#1989F0]`}
         >
           {name}
         </li>
@@ -23,7 +26,7 @@ const NavItem: React.FC<NavItemPropsTypes> = ({ href, name }) => {
     return (
       <li
         onClick={scrollPositionTop}
-        className={`${itemsHeight}  hover:border-b-2 hover:border-blue-400 hover:border-[#1989F0] hover:text-[#1989F0]`}
+        className={`h-12 ${itemsHeight} hover:text-[#1989F0]`}
       >
         {name}
       </li>

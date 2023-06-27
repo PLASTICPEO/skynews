@@ -11,12 +11,12 @@ const Languages = () => {
     },
     {
       id: "2",
-      label: "ENG",
+      label: "Eng",
       href: "/",
     },
     {
       id: "3",
-      label: "RUS",
+      label: "Rus",
       href: "/",
     },
   ];
@@ -27,7 +27,7 @@ const Languages = () => {
 
   return (
     <>
-      <ul className=" xl:flex hidden  space-x-2 font-[Helvetica] font-medium text-xs text-[#475467] cursor-pointer">
+      <ul className=" xl:flex hidden  space-x-2  font-medium text-xs font-Helvetica text-[#475467] cursor-pointer">
         {lang.map((language) => (
           <Link key={language.id} to={language.href}>
             <li

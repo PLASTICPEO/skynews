@@ -8,3 +8,27 @@
   }
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("../src/assets/fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/Helvetica Neue Medium Extended.ttf"), format("ttf");
+}
+
+.font-case {
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+}
+
+
+.custom-icon {
+  fill: red; /* Set the desired color */
+}
+
+/* For Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .font-case {
+    font-variant-caps: all-small-caps;
+  }
+}
+
+
+

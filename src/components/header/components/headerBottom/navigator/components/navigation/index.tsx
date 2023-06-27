@@ -10,8 +10,8 @@ const Navigation: React.FC<NavigationPropsTypes> = ({ navItems }) => {
   const { prevScrollPos } = useContext(HeaderContext);
 
   return (
-    <div className="flex justify-between w-full font-[Helvica] text-[#475467] text-sm font-medium cursor-pointer">
-      <div className="flex items-center">
+    <div className="flex justify-between w-full h-12 text-[#475467] cursor-pointer">
+      <div className="flex">
         <Nav navItems={navItems} />
         <More />
       </div>

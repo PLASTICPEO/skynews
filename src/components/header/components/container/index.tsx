@@ -8,7 +8,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
     <div
       className={`${
         prevScrollPos > 50 ? "flex  justify-between mt-6" : "block"
-      } container m-auto transition-all ease-in-out duration-500 `}
+      } container m-auto transition-all  font-Helvetica ease-in-out duration-500 `}
     >
       {children}
     </div>

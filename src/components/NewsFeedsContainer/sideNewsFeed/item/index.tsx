@@ -25,11 +25,11 @@ const Item: React.FC<ItemTypes> = ({
             </div>
             <div className="space-x-12 flex items-center justify-center">
               {category ? (
-                <p className="text-[#667085] text-[Helvetica] text-xs bg-[#F2F4F7] py-1 xl:px-2 px-2 rounded-2xl">
+                <p className="text-[#667085] text-sm leading-5 tracking-wider not-italic font-case font-Helvetica font-bold bg-[#F2F4F7] py-1 xl:px-2 px-2 rounded-2xl">
                   {category}
                 </p>
               ) : null}
-              <p className="xl:invisible visible text-[#667085] w-12 text-[Helvetica] text-xs font-medium">
+              <p className="xl:invisible visible text-[#667085] w-12 text-xs font-medium">
                 24 წთ
               </p>
             </div>
