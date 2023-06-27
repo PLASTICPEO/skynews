@@ -18,7 +18,9 @@ const SearchButton = () => {
       />
 
       {!isOpenSearchField ? (
-        <span className="flex items-center text-[#475467] ml-2">ძიება</span>
+        <span className="flex items-center text-[#475467] ml-2 mb-1">
+          ძიება
+        </span>
       ) : null}
     </div>
   );
