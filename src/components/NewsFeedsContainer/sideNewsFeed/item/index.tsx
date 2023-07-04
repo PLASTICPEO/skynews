@@ -18,7 +18,7 @@ const Item: React.FC<ItemTypes> = ({
         border ? "border-b-[1px]" : ""
       } bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <div className="flex py-4">
+      <div className="flex py-5">
         <img src={photo} className="bg-cover rounded" />
         <div className="ml-4 overflow-hidden">
           <div className="flex items-center">
