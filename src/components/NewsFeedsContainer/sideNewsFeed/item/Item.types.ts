@@ -1,7 +1,8 @@
 export interface ItemTypes {
     photo: any;
-    style: string;
+    descriptionFont: string;
     text: string;
+    border?: boolean;
     title?: string;
     titleFontSize?: string;
     time: string | number;

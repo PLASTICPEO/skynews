@@ -18,7 +18,7 @@ const Info: React.FC<InfoTypes> = ({
         </p>
       </div>
       <p
-        className={`${categoryStyle} text-[#667085]  leading-5 tracking-wider not-italic font-case font-Helvetica font-bold bg-[#F2F4F7] py-1 px-2 rounded-2xl`}
+        className={`${categoryStyle} text-[#667085]  leading-5 tracking-wider not-italic font-case font-Helvetica font-bold bg-[#F2F4F7]  px-2 py-1 rounded-2xl`}
       >
         {category}
       </p>
