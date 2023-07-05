@@ -12,13 +12,13 @@ const Item: React.FC<ItemTypes> = ({
   time,
   category,
 }) => {
+  const itemBorder = border ? "border-b-[1px]" : "";
+
   return (
     <div
-      className={`flex items-center ${
-        border ? "border-b-[1px]" : ""
-      } bg-[#FFFFFF] border-[#F2F4F7]`}
+      className={`flex items-center ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <div className="flex py-5">
+      <div className="flex py-4">
         <img src={photo} className="bg-cover rounded" />
         <div className="ml-4 overflow-hidden">
           <div className="flex items-center">

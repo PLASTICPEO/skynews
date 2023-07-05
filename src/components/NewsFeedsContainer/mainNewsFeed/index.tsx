@@ -4,7 +4,7 @@ import Description from "./description";
 
 const MainNewsFeed = () => {
   return (
-    <div className="flex h-full flex-col p-4 bg-[#FFFFFF] rounded-lg shadow-sm">
+    <div className="flex flex-col p-4 bg-[#FFFFFF] rounded-lg shadow-sm">
       <NewsPhoto />
       <Info
         time="10"
