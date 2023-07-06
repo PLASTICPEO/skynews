@@ -1,12 +1,13 @@
 import Item from "./item";
 import SideNewsFeedButton from "./button";
-import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle 4.png";
+import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle1.png";
 
 const SideNewsFeed = () => {
   return (
-    <div className="px-4  h-full bg-[#FFFFFF] rounded-lg shadow-sm ">
+    <div className="p-4  h-full bg-[#FFFFFF] rounded-lg shadow-sm ">
       <div className="relative h-full">
         <Item
+          padding={"pb-4"}
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
@@ -15,6 +16,7 @@ const SideNewsFeed = () => {
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
+          padding={"py-4"}
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
@@ -23,6 +25,7 @@ const SideNewsFeed = () => {
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
+          padding={"py-4"}
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}
@@ -31,6 +34,7 @@ const SideNewsFeed = () => {
           text="ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება"
         />
         <Item
+          padding={"py-4"}
           time={"19"}
           category={"პოლიტიკა"}
           photo={newsPhoto}

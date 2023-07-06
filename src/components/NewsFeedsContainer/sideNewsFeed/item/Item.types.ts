@@ -3,6 +3,7 @@ export interface ItemTypes {
     descriptionFont: string;
     text: string;
     border?: boolean;
+    padding?: string;
     title?: string;
     titleFontSize?: string;
     time: string | number;

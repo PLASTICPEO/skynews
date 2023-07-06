@@ -18,7 +18,7 @@
   font-family: "Helvetica", sans-serif;
 }
 
-/* For Chrome */
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .font-case {
     font-variant-caps: all-small-caps;

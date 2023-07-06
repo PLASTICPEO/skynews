@@ -7,6 +7,7 @@ const Item: React.FC<ItemTypes> = ({
   descriptionFont,
   text,
   title,
+  padding,
   border,
   titleFontSize,
   time,
@@ -18,8 +19,8 @@ const Item: React.FC<ItemTypes> = ({
     <div
       className={`flex items-center ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <div className="flex py-4">
-        <img src={photo} className="bg-cover rounded" />
+      <div className={`flex ${padding}`}>
+        <img src={photo} className="bg-cover rounded w-40" />
         <div className="ml-4 overflow-hidden">
           <div className="flex items-center">
             <div className="flex xl:visible invisible">
