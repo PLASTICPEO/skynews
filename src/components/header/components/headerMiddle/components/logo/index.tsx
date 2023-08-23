@@ -1,6 +1,6 @@
 import { HeaderContext } from "../../../../context/HeaderContext";
 import { useContext } from "react";
-import heroLogo from "../../../../../../assets/images/NEWSHUB.svg";
+import heroLogo from "../../../../../../assets/images/NEWSHUB.png";
 import { Link } from "react-router-dom";
 
 const Logo = () => {
