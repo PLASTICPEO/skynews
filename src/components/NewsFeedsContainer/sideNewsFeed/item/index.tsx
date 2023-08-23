@@ -1,15 +1,24 @@
 import clockIcon from "../../../../assets/newsFeedsPhotoTest/clockIcon.svg";
 import Description from "../../mainNewsFeed/description";
-import { ItemTypes } from "./Item.types";
 
-const Item: React.FC<ItemTypes> = ({
+const Item: React.FC<{
+  photo: any;
+  descriptionFont: string;
+  text: string;
+  border?: boolean;
+  title?: string;
+  padding?: string;
+  titleFontStyle?: any;
+  time: string | number;
+  category?: string;
+}> = ({
   photo,
   descriptionFont,
   text,
+  border,
   title,
   padding,
-  border,
-  titleFontSize,
+  titleFontStyle,
   time,
   category,
 }) => {
@@ -40,7 +49,7 @@ const Item: React.FC<ItemTypes> = ({
               </p>
             </div>
           </div>
-          <p className={`${titleFontSize}`}>{title}</p>
+          <p className={`${titleFontStyle}`}>{title}</p>
           <Description style={descriptionFont} text={text} />
         </div>
       </div>

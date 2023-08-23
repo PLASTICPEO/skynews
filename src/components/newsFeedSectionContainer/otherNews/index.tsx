@@ -16,12 +16,13 @@ const OtherNews = () => {
         style={"text-base"}
         buttonText="ყველა სიახლე"
       />
-      <div>
+      <div className="flex flex-col gap-2 mt-2">
         <Item
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -30,7 +31,8 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -39,7 +41,8 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -48,7 +51,8 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -57,25 +61,8 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
-          text={
-            "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
-          }
-        />
-        <Item
-          time={"12"}
-          category={"პოლიტიკა"}
-          photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
-          text={
-            "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
-          }
-        />
-        <Item
-          time={"12"}
-          category={"პოლიტიკა"}
-          photo={otherNewsPhoto}
-          fontSize="xl:text-sm text-xs"
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }

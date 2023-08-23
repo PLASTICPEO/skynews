@@ -1,4 +1,4 @@
-import NewsFeedsContainer from "../../components/newsFeedsContainer";
+import NewsFeedsContainer from "../../components/NewsFeedsContainer";
 import NewsFeedSectionContainer from "../../components/newsFeedSectionContainer";
 const Home = () => {
   return (

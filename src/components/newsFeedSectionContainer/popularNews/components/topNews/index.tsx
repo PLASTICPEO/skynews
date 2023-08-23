@@ -17,45 +17,47 @@ const TopNews = () => {
           categoryStyle="text-xs"
         />
         <Description
-          fontSize={"text-base"}
+          style={"text-base"}
           text={
             "ენერგეტიკის სააგენტო: 2022-ის მარტთან შედარებით, რუსული ნავთობიდან შემოსავალი 43%-ით შემცირდა"
           }
         />
       </div>
-      <div>
+      <div className="flex flex-col gap-2 mt-2">
         <Item
           time={"24"}
           category={"მსოფლიო"}
           photo={PhotoFromSection}
-          fontSize={"xl:text-sm text-xs"}
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }
         />
         <Item
-          time={"24"}
-          category={"მსოფლიო"}
+          time="24"
+          category="მსოფლიო"
           photo={PhotoFromSection}
-          fontSize={"xl:text-sm text-xs"}
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }
         />
         <Item
-          time={"24"}
-          category={"მსოფლიო"}
+          descriptionFont="text-sm"
+          time="24"
+          category="მსოფლიო"
           photo={PhotoFromSection}
-          fontSize={"xl:text-sm text-xs"}
-          text={
-            "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
-          }
+          titleFontStyle="xl:text-sm text-xs"
+          text="უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
         />
         <Item
           time={"24"}
           category={"მსოფლიო"}
           photo={PhotoFromSection}
-          fontSize={"xl:text-sm text-xs"}
+          titleFontStyle="xl:text-sm text-xs"
+          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }
