@@ -1,6 +1,6 @@
 import { HeaderContext } from "../../../../context/HeaderContext";
 import { useContext } from "react";
-import webLogo from "../../../../../../assets/images/NEWSHUB.png";
+import heroLogo from "../../../../../../assets/images/NEWSHUBlogo.svg";
 import { Link } from "react-router-dom";
 
 const Logo = () => {
@@ -15,7 +15,7 @@ const Logo = () => {
           className={`${
             prevScrollPos > 50 ? "w-24" : "w-32"
           }  cursor-pointer m-auto`}
-          src={webLogo}
+          src={heroLogo}
           alt="logo"
           onClick={scrollPositionTop}
         />
