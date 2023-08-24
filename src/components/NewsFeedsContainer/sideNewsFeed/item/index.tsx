@@ -1,5 +1,5 @@
 import clockIcon from "../../../../assets/newsFeedsPhotoTest/clockIcon.svg";
-import Description from "../../mainNewsFeed/description";
+import Description from "../../../../components/NewsFeedsContainer/mainNewsFeed/description/index";
 
 const Item: React.FC<{
   photo: any;

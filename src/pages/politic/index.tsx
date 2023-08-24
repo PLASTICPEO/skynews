@@ -1,7 +1,7 @@
-import DayNews from "../../components/newsFeedSectionContainer/dayNews";
-import Item from "../../components/newsFeedsContainer/sideNewsFeed/item";
+import DayNews from "../../components/newsFeedSectionContainer/dayNews/index";
+import Item from "../../components/NewsFeedsContainer/sideNewsFeed/item";
 import politicPhoto from "../../assets/politicPhoto.png";
-import Banner from "../../components/banner";
+import Banner from "../../components/banner/index";
 
 const Politic = () => {
   return (
@@ -77,14 +77,3 @@ const Politic = () => {
 };
 
 export default Politic;
-
-{
-  /* <Item
-  time="38"
-  title="მგონია, რომ უკრაინის პრეზიდენტი ფაქტებში ვერ ერკვევა - სარჯველაძე ზელე..."
-  photo={politicPhoto}
-  titleFontSize="text-xl mt-2"
-  style="text-sm text-[#475467] mt-2"
-  text="პარლამენტის ადამიანის უფლებათა დაცვის კომიტეტის თავმჯდომარე მიხეილ სარჯველაძე უკრაინის პრეზიდენტის, ვოლოდიმირ ზელენსკის მიერ ექსპრეზიდენტ მიხეილ სააკაშვილის შესახებ გაკეთებულ განცხადებას გამოეხმაურა და აღნიშნა, რომ ზელენსკიმ კომენტარი"
-/> */
-}

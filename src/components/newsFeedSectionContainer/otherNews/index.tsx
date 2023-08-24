@@ -1,12 +1,8 @@
-/* We will use this library for infinite scrolling */
-
-// import InfiniteScroll from "react-infinite-scroll-component";
-
-import Item from "../../newsFeedsContainer/sideNewsFeed/item";
-import SectionHeader from "../components/sectionHeader";
+import Item from "../../NewsFeedsContainer/sideNewsFeed/item/index.tsx";
+import SectionHeader from "../components/sectionHeader/index.tsx";
 
 import otherNewsPhoto from "../../../assets/otherNews.png";
-import Loader from "./components/loader";
+import Loader from "./components/loader/index";
 
 const OtherNews = () => {
   return (

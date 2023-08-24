@@ -1,5 +1,4 @@
 import { useBank } from "./hooks/useBank";
-import ArrowIcon from "../../../../../../../assets/images/moreComponentArrow.svg";
 
 const Banks = () => {
   const {

@@ -1,5 +1,5 @@
-import Item from "./item";
-import SideNewsFeedButton from "./button";
+import Item from "../../../components/NewsFeedsContainer/sideNewsFeed/item/index.tsx";
+import SideNewsFeedButton from "./button/index.tsx";
 import newsPhoto from "../../../assets/newsFeedsPhotoTest/Rectangle1.png";
 
 const SideNewsFeed = () => {

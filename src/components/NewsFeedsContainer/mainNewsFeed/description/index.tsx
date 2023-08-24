@@ -1,6 +1,7 @@
-import { DescriptionTypes } from "./description.types";
-
-const Description: React.FC<DescriptionTypes> = ({ style, text }) => {
+const Description: React.FC<{ style: string; text: string }> = ({
+  style,
+  text,
+}) => {
   return (
     <div>
       <p className={`${style} mt-1`}>{text}</p>

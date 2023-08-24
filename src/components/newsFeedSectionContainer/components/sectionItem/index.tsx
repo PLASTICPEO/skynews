@@ -1,7 +1,7 @@
 import { SectionItemTypes } from "./sectionItem.types";
 
-import Description from "../../../newsFeedsContainer/mainNewsFeed/description";
-import Info from "../../../newsFeedsContainer/mainNewsFeed/info";
+import Description from "../../../NewsFeedsContainer/mainNewsFeed/description";
+import Info from "../../../NewsFeedsContainer/mainNewsFeed/info";
 
 const SectionItem: React.FC<SectionItemTypes> = ({
   photo,
@@ -21,7 +21,7 @@ const SectionItem: React.FC<SectionItemTypes> = ({
         timeStyle={styleTime}
         categoryStyle={styleCategory}
       />
-      <Description fontSize={style} text={text} />
+      <Description style={style} text={text} />
     </div>
   );
 };

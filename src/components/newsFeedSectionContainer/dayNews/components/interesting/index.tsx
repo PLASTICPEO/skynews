@@ -1,6 +1,6 @@
 import { InterestingTypes } from "./interesting.types";
-import Info from "../../../../newsFeedsContainer/mainNewsFeed/info";
-import Description from "../../../../newsFeedsContainer/mainNewsFeed/description";
+import Info from "../../../../NewsFeedsContainer/mainNewsFeed/info";
+import Description from "../../../../NewsFeedsContainer/mainNewsFeed/description";
 
 const Interesting: React.FC<InterestingTypes> = ({ time, text, category }) => {
   return (
@@ -12,7 +12,7 @@ const Interesting: React.FC<InterestingTypes> = ({ time, text, category }) => {
           timeStyle="text-xs"
           categoryStyle="text-xs"
         />
-        <Description fontSize="text-sm" text={text} />
+        <Description style="text-sm" text={text} />
       </div>
     </div>
   );

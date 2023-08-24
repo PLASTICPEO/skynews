@@ -1,9 +1,9 @@
-import Info from "../../../../newsFeedsContainer/mainNewsFeed/info";
-import Item from "../../../../newsFeedsContainer/sideNewsFeed/item";
+import Info from "../../../../NewsFeedsContainer/mainNewsFeed/info/index.tsx";
+import Item from "../../../../NewsFeedsContainer/sideNewsFeed/item/index.tsx";
 import TopNewsPhoto from "../../../../../assets/topNewsPhoto.png";
 
 import PhotoFromSection from "../../../../../assets/photoSection.png";
-import Description from "../../../../newsFeedsContainer/mainNewsFeed/description";
+import Description from "../../../../NewsFeedsContainer/mainNewsFeed/description/index";
 
 const TopNews = () => {
   return (
