@@ -9,13 +9,13 @@ const Logo = () => {
   return (
     <Link to="/">
       <div
-        className={`flex xl:mt-2 mt-10 ${
+        className={`flex  ${
           prevScrollPos > 50 ? "mb-0" : "mb-11"
         } xl:ml-0 ml-4`}
       >
         <img
           className={`${
-            prevScrollPos > 50 ? "xl:w-36" : "xl:w-96"
+            prevScrollPos > 50 ? "xl:w-36" : "xl:w-48"
           } w-60 cursor-pointer m-auto`}
           src={heroLogo}
           alt="logo"
