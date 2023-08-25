@@ -3,10 +3,9 @@
   <h3 align="center">News Site</h3>
 
   <p align="center">
-    Portfolio project
     <br />
     <br />
-    <a href="https://booreykooo.netlify.app/">View Demo</a>
+    <a href="https://news-site-d1ja.onrender.com/">View Demo</a>
   </p>
 </p>
 
@@ -15,6 +14,7 @@
 - [React](https://react.dev/)
 - [TailWindCSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Swiper](https://swiperjs.com/react)
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
 
-   git clone https://github.com/PLASTICPEO/NLYC-assignment
+   git clone https://github.com/PLASTICPEO/news-site.git
 
 2. Install packages
 
