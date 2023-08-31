@@ -16,7 +16,7 @@ const App = () => {
         }
       />
       <Route
-        path="/politic"
+        path="/პოლიტიკა"
         element={
           <DefaultLayout>
             <Politic />

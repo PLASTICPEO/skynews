@@ -9,7 +9,7 @@ import Weather from "./components/currency/components/weather";
 
 const DayNews = () => {
   return (
-    <div className="sticky top-24 my-6 p-4 bg-[#FFFFFF] rounded-lg shadow-sm xl:block hidden">
+    <div className="sticky top-24 mt-4 p-4 bg-[#FFFFFF] rounded-lg shadow-sm xl:block hidden">
       <SectionHeader
         title={"დღის სიახლე"}
         style={"text-base"}

@@ -4,21 +4,18 @@ import { NavContextType } from "./context.types";
 
 export const HeaderContext: React.Context<NavContextType> =
   createContext<NavContextType>({
-    isScrolled: false,
-    prevScrollPos: NaN,
     toggleSearchField: () => {},
     toggleDropDown: () => {},
     scrollPositionTop: () => {},
     isOpenSearchField: false,
     isOpenDropDown: false,
+    scrollY: NaN,
   });
 
 const HeaderProvider = ({ children }: NavProviderProps) => {
   const [isOpenSearchField, setIsOpenMobileSearchField] = useState(false);
   const [isOpenDropDown, setIsOpenDropDown] = useState<boolean>(false);
-
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     scrollPositionTop();
@@ -42,27 +39,24 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
     setIsOpenDropDown(!isOpenDropDown);
   };
 
+  const handleScroll = () => {
+    setIsOpenMobileSearchField(false);
+    setIsOpenDropDown(false);
+    setScrollY(window.scrollY);
+  };
   useEffect(() => {
-    const handleScroll = () => {
-      setIsOpenMobileSearchField(false);
-      setIsOpenDropDown(false);
-      const currentScrollPos = window.pageYOffset;
-      setIsScrolled(currentScrollPos > prevScrollPos);
-      setPrevScrollPos(currentScrollPos);
-    };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [scrollY]);
 
   return (
     <HeaderContext.Provider
       value={{
-        isScrolled,
-        prevScrollPos,
+        scrollY,
         isOpenSearchField,
         isOpenDropDown,
         toggleSearchField,

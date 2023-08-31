@@ -26,7 +26,7 @@ const NewsPhoto = () => {
       >
         {photoArray.map((item: string, index: number) => (
           <SwiperSlide key={index}>
-            <img src={item} className="rounded-lg w-full" />
+            <img src={item} className="rounded-lg w-full select-none" />
           </SwiperSlide>
         ))}
       </Swiper>

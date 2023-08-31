@@ -1,22 +1,23 @@
 import { useContext } from "react";
 import { HeaderContext } from "./context/HeaderContext";
 
-import HeaderTop from "./components/headerTop";
-import HeaderMiddle from "./components/headerMiddle";
-import HeaderBottom from "./components/headerBottom";
-import Container from "./components/container";
+import HeaderTop from "./headerTop";
+import HeaderMiddle from "./headerMiddle";
+import HeaderBottom from "./headerBottom";
+import Container from "./container";
 
 const Header = () => {
-  const { prevScrollPos } = useContext(HeaderContext);
-  const HeaderSize = prevScrollPos > 50 ? "h-[68px]" : "h-42";
+  const { scrollY } = useContext(HeaderContext);
+
+  const HeaderSize = scrollY > 50 ? "h-15" : "h-42";
 
   return (
     <div
       className={`fixed transition-all ease-in-out duration-150 
-       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-b-1  ${HeaderSize}`}
+       top-0 xl:flex xl:flex-col justify-between bg-[#FFFFFF] w-full z-40 border-b-1 ${HeaderSize} `}
     >
       <Container>
-        {prevScrollPos < 50 ? <HeaderTop /> : null}
+        {scrollY < 50 ? <HeaderTop /> : null}
         <HeaderMiddle />
         <HeaderBottom />
       </Container>
