@@ -1,11 +1,11 @@
 <p align="center">
 
-  <h3 align="center">News Site</h3>
+  <h3 align="center">Skynews</h3>
 
   <p align="center">
     <br />
     <br />
-    <a href="https://news-site-d1ja.onrender.com/">View Demo</a>
+    <a href="https://skynewss.netlify.app/">View Demo</a>
   </p>
 </p>
 
