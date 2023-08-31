@@ -28,7 +28,7 @@ const dataBase = [
 ];
 
 export const useSearch = () => {
-  const [data, setData] = useState(dataBase); // Initialize with full dataBase array
+  //   const [data, setData] = useState(dataBase); // Initialize with full dataBase array
   const [searchResult, setSearchResult] = useState<any>(); // Initialize with an empty string
 
   const handleInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
