@@ -1,10 +1,10 @@
-import { HeaderContext } from "../../../context/HeaderContext";
+import { AppContext } from "../../../../../context/HeaderContext";
 import { useContext } from "react";
 import heroLogo from "../../../../../assets/images/NEWSHUB.png";
 import { Link } from "react-router-dom";
 
 const Logo = () => {
-  const { scrollY, scrollPositionTop } = useContext(HeaderContext);
+  const { scrollY, scrollPositionTop } = useContext(AppContext);
 
   return (
     <Link to="/">

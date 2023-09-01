@@ -3,8 +3,8 @@ import Description from "../../../../components/NewsFeedsContainer/mainNewsFeed/
 
 const Item: React.FC<{
   photo: any;
-  descriptionFont: string;
-  text: string;
+  descriptionFont?: string;
+  text?: string;
   border?: boolean;
   title?: string;
   padding?: string;

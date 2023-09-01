@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import MobileMenu from "../../../../mobileMenu";
-import { HeaderContext } from "../../../context/HeaderContext";
+import { AppContext } from "../../../../../context/HeaderContext";
 
 const moreItems = [
   { id: "1", label: "ამინდი" },
@@ -13,7 +13,7 @@ const moreItems = [
 ];
 
 const More: React.FC = () => {
-  const { isOpenDropDown, toggleDropDown } = useContext(HeaderContext);
+  const { isOpenDropDown, toggleDropDown } = useContext(AppContext);
 
   const screenSize = window.innerWidth;
 
@@ -21,28 +21,31 @@ const More: React.FC = () => {
     <div className="flex items-center justify-center border-b-[1px] border-[#FFFFFF] hover:border-[#1989F0]">
       <div
         onClick={toggleDropDown}
-        className="flex items-center justify-center select-none  hover:text-[#1989F0] relative"
+        className="flex items-center justify-center select-none  hover:text-[#1989F0] "
       >
         <p className="text-lg font-case font-Helvetica">მეტი</p>
         <span className="material-symbols-outlined px-2">expand_more</span>
       </div>
-      {isOpenDropDown && screenSize > 550 ? (
-        <div className="absolute top-[100%] translate-x-1/5 bg-[#FFFFFF] drop-shadow-xl py-2 rounded">
-          {moreItems.map((item: { label: string; id: string }) => {
-            return (
-              <Link
-                key={item.id}
-                to={`/${item.label}`}
-                className="hover:bg-[#1989F0]"
-              >
-                <p className="py-4 px-5 w-44 hover:bg-[#1989F00D] hover:text-[#1989F0]">
-                  {item.label}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-      ) : null}
+      <div className="absolute top-[100%] -translate-x-1/5">
+        {isOpenDropDown && screenSize > 550 ? (
+          <div className="bg-[#FFFFFF] drop-shadow-xl py-2 rounded ">
+            {moreItems.map((item: { label: string; id: string }) => {
+              return (
+                <Link
+                  key={item.id}
+                  to={`/${item.label}`}
+                  className="hover:bg-[#1989F0]"
+                >
+                  <p className="py-4 px-5 w-44 hover:bg-[#1989F00D] hover:text-[#1989F0]">
+                    {item.label}
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+
       {isOpenDropDown && screenSize < 550 ? (
         <MobileMenu dropDownToggle={toggleDropDown} />
       ) : null}

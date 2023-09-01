@@ -1,14 +1,14 @@
 import { ContainerProps } from "./container.types";
 import { useContext } from "react";
-import { HeaderContext } from "../context/HeaderContext";
+import { AppContext } from "../../../context/HeaderContext";
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
-  const { scrollY } = useContext(HeaderContext);
+  const { scrollY } = useContext(AppContext);
   return (
     <div
       className={`${
-        scrollY > 50 ? "flex items-center justify-between " : "block"
-      } container m-auto transition-all  font-Helvetica ease-in-out duration-500`}
+        scrollY > 50 ? " flex items-center justify-between " : "block"
+      } overflow-auto no-scrollbar  container m-auto transition-all  font-Helvetica ease-in-out duration-500`}
     >
       {children}
     </div>

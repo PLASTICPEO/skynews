@@ -1,14 +1,14 @@
 import Footer from "../../components/footer";
 import Header from "../../components/header";
-import HeaderProvider from "../../components/header/context/HeaderContext";
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
+import { AppContext } from "../../context/HeaderContext";
 
 const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { isOpenMobileSearch } = useContext(AppContext);
+  const paddingTop = isOpenMobileSearch ? "pt-32" : "pt-52";
   return (
-    <div className="bg-[#EAECF0] pt-44">
-      <HeaderProvider>
-        <Header />
-      </HeaderProvider>
+    <div className={`bg-[#EAECF0] ${paddingTop}`}>
+      <Header />
       <div className="container mx-auto">{children}</div>
       <Footer />
     </div>

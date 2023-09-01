@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import DefaultLayout from "./layouts/default";
 import Home from "./pages/home";
 import Politic from "./pages/politic";
+import Found from "./pages/found";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           </DefaultLayout>
         }
       />
+      <Route path="/მოძიებული/:category" element={<Found />} />
     </Routes>
   );
 };

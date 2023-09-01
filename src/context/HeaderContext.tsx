@@ -2,18 +2,21 @@ import { createContext, useState, useEffect } from "react";
 import { NavProviderProps } from "./context.types";
 import { NavContextType } from "./context.types";
 
-export const HeaderContext: React.Context<NavContextType> =
+export const AppContext: React.Context<NavContextType> =
   createContext<NavContextType>({
     toggleSearchField: () => {},
     toggleDropDown: () => {},
     scrollPositionTop: () => {},
+    toggleMobileSearchField: () => {},
     isOpenSearchField: false,
     isOpenDropDown: false,
+    isOpenMobileSearch: false,
     scrollY: NaN,
   });
 
-const HeaderProvider = ({ children }: NavProviderProps) => {
-  const [isOpenSearchField, setIsOpenMobileSearchField] = useState(false);
+const ContextProvider = ({ children }: NavProviderProps) => {
+  const [isOpenSearchField, setIsOpenSearch] = useState(false);
+  const [isOpenMobileSearch, setIsOpenMobileSearch] = useState<boolean>(false);
   const [isOpenDropDown, setIsOpenDropDown] = useState<boolean>(false);
   const [scrollY, setScrollY] = useState(0);
 
@@ -29,18 +32,22 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
     });
   };
 
+  const toggleMobileSearchField = () => {
+    setIsOpenMobileSearch(!isOpenMobileSearch);
+  };
+
   const toggleSearchField = () => {
     setIsOpenDropDown(false);
-    setIsOpenMobileSearchField(!isOpenSearchField);
+    setIsOpenSearch(!isOpenSearchField);
   };
 
   const toggleDropDown = () => {
-    setIsOpenMobileSearchField(false);
+    setIsOpenSearch(false);
     setIsOpenDropDown(!isOpenDropDown);
   };
 
   const handleScroll = () => {
-    setIsOpenMobileSearchField(false);
+    setIsOpenSearch(false);
     setIsOpenDropDown(false);
     setScrollY(window.scrollY);
   };
@@ -54,19 +61,21 @@ const HeaderProvider = ({ children }: NavProviderProps) => {
   }, [scrollY]);
 
   return (
-    <HeaderContext.Provider
+    <AppContext.Provider
       value={{
         scrollY,
         isOpenSearchField,
         isOpenDropDown,
+        isOpenMobileSearch,
+        toggleMobileSearchField,
         toggleSearchField,
         toggleDropDown,
         scrollPositionTop,
       }}
     >
       {children}
-    </HeaderContext.Provider>
+    </AppContext.Provider>
   );
 };
 
-export default HeaderProvider;
+export default ContextProvider;

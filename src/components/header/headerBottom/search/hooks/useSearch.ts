@@ -9,21 +9,25 @@ const dataBase = [
     img: judge,
     title:
       'შეიძინა პოლიტიკური შინაარსიც" - მოსამართლე აშშ-ში სასწავლო ვიზიტზე უარს ამბობს',
+    category: "პოლიტიკა",
   },
   {
     img: frussia,
     title:
       'ლავროვის თქმით, ითვალისწინებენ დასავლეთის მცდელობებს, "მეორე ფრონტი" გახსნას',
+    category: "უცხოეთი",
   },
   {
     img: usa,
     title:
       "აშშ-ის საელჩო: სიამაყეს, რომლითაც ქართული ენის სიყვარულს დაატარებთ, ვერავინ წაგართმევთ",
+    category: "კონფლიქტები",
   },
   {
     img: orban,
     title:
       "ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება",
+    category: "პოლიტიკა",
   },
 ];
 
@@ -34,6 +38,8 @@ export const useSearch = () => {
   const handleInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
     const result = dataBase.filter((items) => items.title.includes(inputValue));
+
+    console.log(result);
 
     if (inputValue.length > 0) {
       setSearchResult(result);

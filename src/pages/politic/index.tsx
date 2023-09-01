@@ -5,7 +5,7 @@ import Banner from "../../components/banner/index";
 
 const Politic = () => {
   return (
-    <div className="xl:grid xl:grid-cols-12 grid-cols-10 gap-4 py-20">
+    <div className="xl:grid xl:grid-cols-12 grid-cols-10 gap-4">
       <div className="xl:col-span-9 col-span-9">
         <div className="mt-4 bg-[#FFFFFF] rounded-lg shadow-sm p-4">
           <Item

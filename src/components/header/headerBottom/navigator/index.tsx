@@ -15,7 +15,7 @@ const Navigator: React.FC = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex overflow-auto no-scrollbar">
       <Navigation navItems={navItems} />
     </div>
   );

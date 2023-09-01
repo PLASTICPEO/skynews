@@ -3,18 +3,16 @@ import { Link } from "react-router-dom";
 import More from "../navigator/more";
 import SearchBar from "../search";
 import { useContext } from "react";
-import { HeaderContext } from "../../context/HeaderContext";
+import { AppContext } from "../../../../context/HeaderContext";
 
 const Navigation: React.FC<NavigationPropsTypes> = ({ navItems }) => {
-  const { scrollY } = useContext(HeaderContext);
+  const { scrollY } = useContext(AppContext);
 
-  const spaceBetween = scrollY > 50 ? "space-x-4" : "space-x-7";
+  const spaceBetween = scrollY > 50 ? "space-x-4" : "space-x-6";
 
   return (
     <div className="flex justify-between space-x-4 w-full text-[#475467] cursor-pointer select-none  ">
-      <div
-        className={`flex ${spaceBetween} overflow-x-scroll xl:px-0 px-2 select-none`}
-      >
+      <div className={`flex ${spaceBetween}  xl:px-0 px-2 select-none`}>
         {navItems.map((item) => {
           return (
             <Link

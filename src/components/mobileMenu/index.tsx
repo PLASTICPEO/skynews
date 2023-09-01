@@ -1,6 +1,6 @@
 const MobileMenu: React.FC<{ dropDownToggle?: any }> = ({ dropDownToggle }) => {
   return (
-    <div className="absolute flex items-end  top-0 left-0 w-full h-screen bg-[black] bg-opacity-50 z-50">
+    <div className="fixed top-0 left-0 flex items-end  w-full h-screen bg-[black] bg-opacity-50 z-50">
       <div className="bg-[#FFFFFF] w-full h-96 rounded-lg">
         <div className="flex justify-between w-full p-6 text-2xl text-[#101828] border-b-[1px] border-[#F2F4F7]">
           <p>მეტი</p>

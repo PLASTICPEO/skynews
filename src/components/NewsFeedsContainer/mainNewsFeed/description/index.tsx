@@ -1,4 +1,4 @@
-const Description: React.FC<{ style: string; text: string }> = ({
+const Description: React.FC<{ style?: string; text?: string }> = ({
   style,
   text,
 }) => {
