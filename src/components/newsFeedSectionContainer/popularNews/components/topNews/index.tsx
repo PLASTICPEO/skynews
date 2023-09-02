@@ -28,8 +28,6 @@ const TopNews = () => {
           time={"24"}
           category={"მსოფლიო"}
           photo={PhotoFromSection}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }
@@ -38,26 +36,20 @@ const TopNews = () => {
           time="24"
           category="მსოფლიო"
           photo={PhotoFromSection}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }
         />
         <Item
-          descriptionFont="text-sm"
           time="24"
           category="მსოფლიო"
           photo={PhotoFromSection}
-          titleFontStyle="xl:text-sm text-xs"
           text="უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
         />
         <Item
           time={"24"}
           category={"მსოფლიო"}
           photo={PhotoFromSection}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "უკრაინაში დაღუპული კიდევ ერთი ქართველი მებრძოლი მიხეილ მაზანაშვილი სამშობლოში ჩამოასვენეს"
           }

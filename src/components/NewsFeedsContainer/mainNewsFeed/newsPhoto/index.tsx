@@ -14,7 +14,7 @@ import Photo1 from "../../../../assets/newsFeedsPhotoTest/Rectangle1.png";
 const NewsPhoto = () => {
   const photoArray: any = [Photo2, Photo1, Photo2, Photo1];
   return (
-    <div className="bg-white rounded-lg">
+    <div className="bg-white rounded-lg ">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -26,7 +26,7 @@ const NewsPhoto = () => {
       >
         {photoArray.map((item: string, index: number) => (
           <SwiperSlide key={index}>
-            <img src={item} className="rounded-lg w-full select-none" />
+            <img src={item} className="rounded-lg w-full select-none " />
           </SwiperSlide>
         ))}
       </Swiper>

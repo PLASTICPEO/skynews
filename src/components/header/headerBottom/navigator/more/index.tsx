@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import MobileMenu from "../../../../mobileMenu";
 import { AppContext } from "../../../../../context/HeaderContext";
+import MoreLayout from "../../../../more";
 
 const moreItems = [
   { id: "1", label: "ამინდი" },
@@ -45,9 +45,22 @@ const More: React.FC = () => {
           </div>
         ) : null}
       </div>
-
       {isOpenDropDown && screenSize < 550 ? (
-        <MobileMenu dropDownToggle={toggleDropDown} />
+        <MoreLayout toggleDropDown={toggleDropDown}>
+          <div className="bg-[#FFFFFF] drop-shadow-xl py-2 rounded">
+            <ul>
+              {moreItems.map((item: any, index: number) => {
+                return (
+                  <Link key={index} to={`/${item.label}`}>
+                    <li className="p-4 border-b-[1px] border-[#EAECF0]">
+                      {item.label}
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
+        </MoreLayout>
       ) : null}
     </div>
   );

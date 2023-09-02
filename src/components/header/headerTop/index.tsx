@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Languages from "./components/languages";
 import Social from "./components/social";
 import { AppContext } from "../../../context/HeaderContext";

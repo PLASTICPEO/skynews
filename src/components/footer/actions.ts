@@ -3,5 +3,5 @@ export enum Actions {
   SEARCH = "ძიება",
   VIDEO = "ვიდეო",
   QUIZ = "ქვიზი",
-  CONTACT = "კოტაქტი",
+  CONTACT = "კონტაქტი",
 }

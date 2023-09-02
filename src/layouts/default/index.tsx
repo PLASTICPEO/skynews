@@ -7,7 +7,7 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { isOpenMobileSearch } = useContext(AppContext);
   const paddingTop = isOpenMobileSearch ? "pt-32" : "pt-52";
   return (
-    <div className={`bg-[#EAECF0] ${paddingTop}`}>
+    <div className={`bg-[#EAECF0] pb-20 ${paddingTop}`}>
       <Header />
       <div className="container mx-auto">{children}</div>
       <Footer />

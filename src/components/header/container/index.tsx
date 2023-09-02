@@ -6,7 +6,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   const { scrollY } = useContext(AppContext);
   return (
     <div
-      className={`${
+      className={` ${
         scrollY > 50 ? " flex items-center justify-between " : "block"
       } overflow-auto no-scrollbar  container m-auto transition-all  font-Helvetica ease-in-out duration-500`}
     >

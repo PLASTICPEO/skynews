@@ -17,8 +17,6 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -27,8 +25,6 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -37,8 +33,6 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -47,8 +41,6 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }
@@ -57,8 +49,6 @@ const OtherNews = () => {
           time={"12"}
           category={"პოლიტიკა"}
           photo={otherNewsPhoto}
-          titleFontStyle="xl:text-sm text-xs"
-          descriptionFont="text-sm"
           text={
             "გენშტაბი: ბოლო ერთ დღეში უკრაინელებმა მტრის 70-ზე მეტი შეტევა მოიგერიეს "
           }

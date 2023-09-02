@@ -3,6 +3,7 @@ import DefaultLayout from "./layouts/default";
 import Home from "./pages/home";
 import Politic from "./pages/politic";
 import Found from "./pages/found";
+import Contact from "./pages/contact";
 
 const App = () => {
   return (
@@ -21,6 +22,14 @@ const App = () => {
         element={
           <DefaultLayout>
             <Politic />
+          </DefaultLayout>
+        }
+      />
+      <Route
+        path="/კონტაქტი"
+        element={
+          <DefaultLayout>
+            <Contact />
           </DefaultLayout>
         }
       />
