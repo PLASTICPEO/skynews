@@ -13,9 +13,9 @@ const Item: React.FC<{
 
   return (
     <div
-      className={`flex items-center  space-x-4 py-4 ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
+      className={`flex items-center space-x-4 py-4  ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <img src={photo} alt="thumbnail" />
+      <img src={photo} alt="thumbnail" className="xl:h-28 h-10" />
       <div>
         <div className="flex items-center space-x-2">
           <div className="flex space-x-0.5">
@@ -30,7 +30,10 @@ const Item: React.FC<{
         </div>
         <div>
           <p className="text-xl">{title}</p>
-          <Description text={text} style="text-sm word-brake text-[#475467]" />
+          <Description
+            text={text}
+            style="xl:text-sm text-xs word-brake text-[#101828]"
+          />
         </div>
       </div>
     </div>

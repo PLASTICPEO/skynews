@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../../../../context/HeaderContext";
 
-import judge from "../../../../assets/newsFeedsPhotoTest/Rectangle 4.png";
+import judge from "../../../../assets/search/Rectangle 4.svg";
 import frussia from "../../../../assets/search/frussia.svg";
 import usa from "../../../../assets/search/აშშ.svg";
 import orban from "../../../../assets/search/ორბანი.svg";

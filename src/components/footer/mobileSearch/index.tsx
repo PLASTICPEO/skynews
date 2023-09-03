@@ -13,7 +13,7 @@ const MobileSearch = () => {
     <>
       {isOpenMobileSearch ? (
         <div className="fixed top-0 left-0 w-full h-28 bg-[#FFFFFF] drop-shadow-lg z-50">
-          <div className="flex items-center justify-between  w-full h-full p-4">
+          <div className="flex items-center justify-between  w-full h-full p-4 border-b-2 border-[#EAECF0]">
             <div className="flex items-center justify-center space-x-4">
               <span className="material-symbols-outlined w-4">search</span>
               <input
@@ -45,7 +45,7 @@ const MobileSearch = () => {
                   index: number
                 ) => {
                   return (
-                    <div key={index} className="bg-[#FFFFFF] px-2 w-full">
+                    <div key={index} className="bg-[#FFFFFF] px-2 w-full]">
                       <Item
                         category={item.category}
                         photo={item.img}
