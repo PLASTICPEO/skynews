@@ -5,7 +5,7 @@
   <p align="center">
     <br />
     <br />
-    <a href="https://skynewss.netlify.app/">View Demo</a>
+    <a href="https://news-site-d1ja.onrender.com/">View Demo</a>
   </p>
 </p>
 
