@@ -1,5 +1,5 @@
 export interface SectionHeaderTypes {
     title: string;
-    style: string;
+    style?: string;
     buttonText: string;
 }

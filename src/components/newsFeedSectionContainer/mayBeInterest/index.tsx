@@ -6,11 +6,7 @@ import mayBeInterestPhoto from "../../../assets/usaFlag.png";
 const MayBeInterest: React.FC = () => {
   return (
     <div className="p-4 mt-4 rounded-lg bg-[#FFFFFF] shadow-sm ">
-      <SectionHeader
-        title="შეიძლება დაგაინტერესოთ"
-        style={"text-xl"}
-        buttonText="ყველა სიახლე"
-      />
+      <SectionHeader title="შეიძლება დაგაინტერესოთ" buttonText="ყველა სიახლე" />
       <div className="xl:grid xl:grid-cols-3 gap-6">
         <SectionItem
           photo={mayBeInterestPhoto}

@@ -13,30 +13,34 @@ const Item: React.FC<{
 
   return (
     <div
-      className={`flex items-center gap-2 space-x-4  xl:py-4 py-2  ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
+      className={`flex items-center space-x-4   xl:py-4 py-2  ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <div className="w-1/2">
+      <div className="xl:w-56 w-40">
         <img src={photo} alt="thumbnail" />
       </div>
 
       <div className="w-full">
-        <div className="flex items-center space-x-2">
-          <div className="flex space-x-0.5">
+        <div className="xl:flex grid grid-cols-2 xl:space-x-2">
+          <div className="flex items-center xl:justify-start justify-end space-x-1 xl:order-1 order-2">
             <img src={clockIcon} alt="clock" className="w-3" />
-            <p className="text-xs text-[#667085]">{time} წუთის წინ</p>
+            <div className="flex items-center">
+              <p className="text-xs text-[#667085]">{time}</p>
+              <p className="xl:block hidden text-xs text-[#667085]">
+                წუთის წინ
+              </p>
+            </div>
           </div>
-          {category ? (
-            <p className="text-sm text-[#667085] font-[Helvetica] font-case bg-[#F2F4F7] px-3 py-0.5 rounded-full">
-              {category}
-            </p>
-          ) : null}
+          <div className="flex items-center xl:justify-end justify-start xl:order-2 order-1">
+            {category ? (
+              <p className="text-sm text-[#667085]  font-[Helvetica] font-case bg-[#F2F4F7] xl:px-3 px-1.5 xl:py-0.5 rounded-full">
+                {category}
+              </p>
+            ) : null}
+          </div>
         </div>
-        <div>
+        <div className="py-2">
           <p className="text-xl">{title}</p>
-          <Description
-            text={text}
-            style="xl:text-sm text-xs word-brake text-[#101828]"
-          />
+          <Description text={text} style="xl:text-sm text-xs text-[#101828]" />
         </div>
       </div>
     </div>

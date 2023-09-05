@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../../../../context/HeaderContext";
 
 import judge from "../../../../assets/search/Rectangle 4.svg";
@@ -38,9 +38,27 @@ const dataBase = [
 ];
 
 export const useMobileSearch = () => {
-  const { toggleMobileSearchField } = useContext(AppContext);
+  const { toggleMobileSearchField, isOpenMobileSearch } =
+    useContext(AppContext);
   const [searchResult, setSearchResult] = useState<any>();
   const [searchValue, setSearchValue] = useState("");
+  const [isVisible, setIsVisible] = useState(false); // State to control visibility
+  const screenSize = window.innerWidth;
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newScreenSize = window.innerWidth;
+      setIsVisible(isOpenMobileSearch && newScreenSize < 550);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    setIsVisible(isOpenMobileSearch && screenSize < 550);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isOpenMobileSearch, screenSize]);
 
   const handleInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
@@ -62,6 +80,7 @@ export const useMobileSearch = () => {
     toggleMobileSearchField();
   };
   return {
+    isVisible,
     searchValue,
     searchResult,
     handleInputValue,

@@ -1,17 +1,21 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../../context/HeaderContext";
 
 import Item from "../../NewsFeedsContainer/sideNewsFeed/item";
 import { useMobileSearch } from "./hooks/useMobileSearch";
 
 const MobileSearch = () => {
-  const { isOpenMobileSearch } = useContext(AppContext);
-  const { handleInputValue, searchResult, searchValue, cancelSearch } =
-    useMobileSearch();
+  const {
+    isVisible,
+    searchResult,
+    searchValue,
+    handleInputValue,
+    cancelSearch,
+  } = useMobileSearch();
 
   return (
     <>
-      {isOpenMobileSearch ? (
+      {isVisible ? (
         <div className="fixed top-0 left-0 w-full h-28 bg-[#FFFFFF] drop-shadow-lg z-50">
           <div className="flex items-center justify-between  w-full h-full p-4 border-b-2 border-[#EAECF0]">
             <div className="flex items-center justify-center space-x-4">
@@ -45,7 +49,7 @@ const MobileSearch = () => {
                   index: number
                 ) => {
                   return (
-                    <div key={index} className="bg-[#FFFFFF] px-2 w-full]">
+                    <div key={index} className="bg-[#FFFFFF] px-2 w-full">
                       <Item
                         category={item.category}
                         photo={item.img}

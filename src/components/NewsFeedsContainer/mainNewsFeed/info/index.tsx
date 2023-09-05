@@ -8,8 +8,8 @@ const Info: React.FC<InfoTypes> = ({
   categoryStyle,
 }) => {
   return (
-    <div className="flex items-center xl:space-x-2 mt-3">
-      <div className="flex xl:space-x-1">
+    <div className="flex items-center  sm:justify-between xl:space-x-2 mt-3">
+      <div className="flex space-x-1">
         <img src={clockIcon} alt="" />
         <p
           className={`${timeStyle} text-[#667085] text-Helvetica  font-medium`}
