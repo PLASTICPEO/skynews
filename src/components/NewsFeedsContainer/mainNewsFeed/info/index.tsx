@@ -8,7 +8,7 @@ const Info: React.FC<InfoTypes> = ({
   categoryStyle,
 }) => {
   return (
-    <div className="flex items-center  sm:justify-between xl:space-x-2 mt-3">
+    <div className="flex items-center  sm:justify-between space-x-2 mt-3">
       <div className="flex space-x-1">
         <img src={clockIcon} alt="" />
         <p
