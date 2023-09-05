@@ -34,8 +34,8 @@ const sideNewsItems = [
 
 const SideNewsFeed = () => {
   return (
-    <div className="px-4 h-full bg-[#FFFFFF] rounded-lg shadow-sm ">
-      <div className="relative h-full flex flex-col ">
+    <div className="px-4 h-max bg-[#FFFFFF] rounded-lg shadow-sm ">
+      <div className="relative h-[500px] flex flex-col ">
         {sideNewsItems.map(
           (
             item: {

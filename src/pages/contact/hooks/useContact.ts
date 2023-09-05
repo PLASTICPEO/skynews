@@ -68,7 +68,7 @@ export const useContact = () => {
         newError = "შეიყვანეთ ტელეფონი";
         break;
       case !validateNumber(contactForm.number):
-        newError = "ნომერი (მინიმუმ 9 ციფრი)";
+        newError = "ნომერი არასწორია";
         break;
       case contactForm.mail.trim() === "":
         newError = "შეიყვანეთ მეილი";

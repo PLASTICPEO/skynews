@@ -45,7 +45,7 @@ const Contact = () => {
                 type="number"
                 name="number"
                 className={`bg-[#FFFFFF] px-4 py-5 appearance-none rounded-lg text-[#475467] placeholder:text-xs outline-none border-2 border-[#EAECF0] [&::-webkit-inner-spin-button]:appearance-none`}
-                placeholder="ტელეფონი"
+                placeholder="597 600 949"
               />
               <input
                 onChange={handleChange}

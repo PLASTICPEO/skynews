@@ -13,10 +13,13 @@ const Item: React.FC<{
 
   return (
     <div
-      className={`flex items-center space-x-4 py-4  ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
+      className={`flex items-center gap-2 space-x-4  xl:py-4 py-2  ${itemBorder} bg-[#FFFFFF] border-[#F2F4F7]`}
     >
-      <img src={photo} alt="thumbnail" className="xl:h-28 h-10" />
-      <div>
+      <div className="w-1/2">
+        <img src={photo} alt="thumbnail" />
+      </div>
+
+      <div className="w-full">
         <div className="flex items-center space-x-2">
           <div className="flex space-x-0.5">
             <img src={clockIcon} alt="clock" className="w-3" />
