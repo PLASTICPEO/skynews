@@ -1,6 +1,3 @@
-import { useContext, useEffect, useState } from "react";
-import { AppContext } from "../../../context/HeaderContext";
-
 import Item from "../../NewsFeedsContainer/sideNewsFeed/item";
 import { useMobileSearch } from "./hooks/useMobileSearch";
 
