@@ -1,11 +1,4 @@
-import { useEffect, useState } from "react";
-import Unit from "../unit";
-
-interface Language {
-  id: string;
-  label: string;
-  DollarRate: number | string;
-}
+import { useState } from "react";
 
 const banks = [
   {

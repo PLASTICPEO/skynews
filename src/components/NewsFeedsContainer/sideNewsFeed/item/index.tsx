@@ -8,8 +8,7 @@ const Item: React.FC<{
   time: string | number;
   category?: string;
   title?: string;
-  titleFontSize?: string;
-}> = ({ photo, text, border, time, category, title, titleFontSize }) => {
+}> = ({ photo, text, border, time, category, title }) => {
   const itemBorder = border ? "border-b-[1px]" : "";
 
   return (

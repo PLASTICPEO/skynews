@@ -3,32 +3,32 @@ import Item from "../../components/NewsFeedsContainer/sideNewsFeed/item";
 import politicPhoto from "../../assets/politicPhoto.png";
 import Banner from "../../components/banner/index";
 
-const sideNewsItems = [
-  {
-    time: "24",
-    category: "პოლიტიკა",
-    text: "ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება",
-    thumbnail: politicPhoto,
-  },
-  {
-    time: "24",
-    category: "ანალიტიკა",
-    text: "ვნუკოვოს აეროპორტის განრიგში მოსკოვი-თბილისის პირდაპირი რეისი გაჩნდა, შემდეგ კი გაქრა",
-    thumbnail: politicPhoto,
-  },
-  {
-    time: "24",
-    category: "მსოფლიო",
-    text: "ლავროვის თქმით, ითვალისწინებენ დასავლეთის მცდელობებს, 'მეორე ფრონტი' გახსნას",
-    thumbnail: politicPhoto,
-  },
-  {
-    time: "24",
-    category: "ეკონომიკა",
-    text: "აშშ-ის საელჩო: სიამაყეს, რომლითაც ქართული ენის სიყვარულს დაატარებთ, ვერავინ წაგართმევთ",
-    thumbnail: politicPhoto,
-  },
-];
+// const sideNewsItems = [
+//   {
+//     time: "24",
+//     category: "პოლიტიკა",
+//     text: "ორბანი: უკრაინა ფინანსური კუთხით არარსებული ქვეყანაა, თუ მხარს აღარ დავუჭერთ, ომი დასრულდება",
+//     thumbnail: politicPhoto,
+//   },
+//   {
+//     time: "24",
+//     category: "ანალიტიკა",
+//     text: "ვნუკოვოს აეროპორტის განრიგში მოსკოვი-თბილისის პირდაპირი რეისი გაჩნდა, შემდეგ კი გაქრა",
+//     thumbnail: politicPhoto,
+//   },
+//   {
+//     time: "24",
+//     category: "მსოფლიო",
+//     text: "ლავროვის თქმით, ითვალისწინებენ დასავლეთის მცდელობებს, 'მეორე ფრონტი' გახსნას",
+//     thumbnail: politicPhoto,
+//   },
+//   {
+//     time: "24",
+//     category: "ეკონომიკა",
+//     text: "აშშ-ის საელჩო: სიამაყეს, რომლითაც ქართული ენის სიყვარულს დაატარებთ, ვერავინ წაგართმევთ",
+//     thumbnail: politicPhoto,
+//   },
+// ];
 
 const Politic = () => {
   return (
