@@ -8,7 +8,8 @@ const Item: React.FC<{
   time: string | number;
   category?: string;
   title?: string;
-}> = ({ photo, text, border, time, category, title }) => {
+  titleFontSize?: string;
+}> = ({ photo, text, border, time, category, title, titleFontSize }) => {
   const itemBorder = border ? "border-b-[1px]" : "";
 
   return (
@@ -21,9 +22,9 @@ const Item: React.FC<{
 
       <div className="w-full">
         <div className="xl:flex grid grid-cols-2 xl:space-x-2">
-          <div className="flex items-center xl:justify-start justify-end space-x-1 xl:order-1 order-2">
+          <div className="flex items-center xl:justify-start justify-end space-x-2 xl:order-1 order-2">
             <img src={clockIcon} alt="clock" className="w-3" />
-            <div className="flex items-center">
+            <div className="flex items-center space-x-1">
               <p className="text-xs text-[#667085]">{time}</p>
               <p className="xl:block hidden text-xs text-[#667085]">
                 წუთის წინ
@@ -38,9 +39,14 @@ const Item: React.FC<{
             ) : null}
           </div>
         </div>
-        <div className="py-2">
-          <p className="text-xl">{title}</p>
-          <Description text={text} style="xl:text-sm text-xs text-[#101828]" />
+        <div className="py-2 break-words">
+          <p className="xl:text-xl text-sm w-70 xl:line-clamp-none line-clamp-1">
+            {title}
+          </p>
+          <Description
+            text={text}
+            style="xl:text-sm text-xs xl:line-clamp-none line-clamp-2   text-[#101828] "
+          />
         </div>
       </div>
     </div>

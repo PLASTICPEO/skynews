@@ -35,38 +35,32 @@ const Politic = () => {
     <div className="xl:grid xl:grid-cols-12 grid-cols-10 gap-4">
       <div className="xl:col-span-9 col-span-9">
         <div className="mt-4 bg-[#FFFFFF] rounded-lg shadow-sm p-4">
-          {sideNewsItems.map(
-            (
-              item: {
-                time: string | number;
-                category: string;
-                text: string;
-                thumbnail: string;
-              },
-              index: number
-            ) => {
-              return (
-                <Item
-                  key={index}
-                  time={item.time}
-                  category={item.category}
-                  photo={item.thumbnail}
-                  border
-                  text={item.text}
-                />
-              );
-            }
-          )}
-        </div>
-        <Banner />
-        <div className="grid grid-cols-1 gap-2 mt-4 bg-[#FFFFFF] rounded-lg shadow-sm p-4">
           <Item
+            category="პოლიტიკა"
             time="38"
             title="მგონია, რომ უკრაინის პრეზიდენტი ფაქტებში ვერ ერკვევა - სარჯველაძე ზელე..."
             photo={politicPhoto}
             text="პარლამენტის ადამიანის უფლებათა დაცვის კომიტეტის თავმჯდომარე მიხეილ სარჯველაძე უკრაინის პრეზიდენტის, ვოლოდიმირ ზელენსკის მიერ ექსპრეზიდენტ მიხეილ სააკაშვილის შესახებ გაკეთებულ განცხადებას გამოეხმაურა და აღნიშნა, რომ ზელენსკიმ კომენტარი"
           />
           <Item
+            category="Github: PLASTICPEO"
+            time="38"
+            title="მგონია, რომ უკრაინის პრეზიდენტი ფაქტებში ვერ ერკვევა - სარჯველაძე ზელე..."
+            photo={politicPhoto}
+            text="პარლამენტის ადამიანის უფლებათა დაცვის კომიტეტის თავმჯდომარე მიხეილ სარჯველაძე უკრაინის პრეზიდენტის, ვოლოდიმირ ზელენსკის მიერ ექსპრეზიდენტ მიხეილ სააკაშვილის შესახებ გაკეთებულ განცხადებას გამოეხმაურა და აღნიშნა, რომ ზელენსკიმ კომენტარი"
+          />
+        </div>
+        <Banner />
+        <div className="grid grid-cols-1 gap-2 mt-4 bg-[#FFFFFF] rounded-lg shadow-sm p-4">
+          <Item
+            category="პოლიტიკა"
+            time="38"
+            title="მგონია, რომ უკრაინის პრეზიდენტი ფაქტებში ვერ ერკვევა - სარჯველაძე ზელე..."
+            photo={politicPhoto}
+            text="პარლამენტის ადამიანის უფლებათა დაცვის კომიტეტის თავმჯდომარე მიხეილ სარჯველაძე უკრაინის პრეზიდენტის, ვოლოდიმირ ზელენსკის მიერ ექსპრეზიდენტ მიხეილ სააკაშვილის შესახებ გაკეთებულ განცხადებას გამოეხმაურა და აღნიშნა, რომ ზელენსკიმ კომენტარი"
+          />
+          <Item
+            category="პოლიტიკა"
             time="38"
             title="მგონია, რომ უკრაინის პრეზიდენტი ფაქტებში ვერ ერკვევა - სარჯველაძე ზელე..."
             photo={politicPhoto}
