@@ -12,7 +12,7 @@ const Info: React.FC<InfoTypes> = ({
       <div className="flex space-x-1">
         <img src={clockIcon} alt="" />
         <p
-          className={`${timeStyle} text-[#667085] text-Helvetica  font-medium`}
+          className={`${timeStyle} xl:text-sm text-xs text-[#667085] text-Helvetica  font-medium`}
         >
           {time} წუთის წინ
         </p>

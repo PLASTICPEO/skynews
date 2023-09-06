@@ -1,45 +1,82 @@
-import { useBank } from "./hooks/useBank";
+import { useEffect, useState } from "react";
+import Unit from "../unit";
+
+interface Language {
+  id: string;
+  label: string;
+  DollarRate: number | string;
+}
+
+const banks = [
+  {
+    name: "ეროვნული ბანკი",
+    dolarRate: 1.75,
+    id: 1,
+  },
+  {
+    name: "თიბისი ბანკი",
+    dolarRate: 1.46,
+    id: 2,
+  },
+];
 
 const Banks = () => {
-  const {
-    banks,
-    selectedBank,
-    isDropdownOpen,
-    dropdownLanguages,
-    handleBankClick,
-    handleDropdownToggle,
-  } = useBank();
+  const [selected, setSelected] = useState("აირჩიე ბანკი");
+  const [isOpen, setIsOpen] = useState(false);
+  const [dolarRate, setDolarRate] = useState<number | null>(null);
+  const [selectedBank, setSelectedBank] = useState<any>(null);
 
+  const toggleDropDown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleBankSelection = (bank: any) => {
+    toggleDropDown();
+    setSelected(bank.name);
+    setDolarRate(bank.dolarRate);
+    setSelectedBank(bank); // Store the selected bank separately
+  };
   return (
-    <div
-      className="flex items-center  z-40 cursor-pointer m-4 relative"
-      onClick={handleDropdownToggle}
-    >
-      <div className="flex w-40 text-lg justify-between text-[#101828] bg-[#9FB4BC] rounded-xl p-2 ">
-        <div className="font-medium order-1 not-italic font-case font-Helvetica">
-          {selectedBank
-            ? banks.find((bank) => bank.id === selectedBank)?.label ||
-              banks[0].label
-            : "აირჩიე ბანკი"}
-        </div>
-        <div>
-          <span className="mt-1 material-symbols-outlined">expand_more</span>
+    <div className="p-4 flex flex-col space-y-2">
+      <div className="bg-[#8FCDE0] w-max rounded-lg">
+        <div className="px-2.5 py-1.5 w-48">
+          <div
+            onClick={toggleDropDown}
+            className="flex items-center space-x-10 justify-between"
+          >
+            <p className="text-xs">{selected}</p>
+            <span className="material-symbols-outlined">expand_more</span>
+          </div>
+          {isOpen ? (
+            <div>
+              {banks.map((item: any) => {
+                // Exclude the selected bank from rendering
+                if (selectedBank && item.id === selectedBank.id) {
+                  return null;
+                }
+                return (
+                  <p
+                    onClick={() => handleBankSelection(item)}
+                    key={item.id}
+                    className="text-sm"
+                  >
+                    {item.name}
+                  </p>
+                );
+              })}
+            </div>
+          ) : null}
         </div>
       </div>
 
-      {isDropdownOpen && (
-        <ul className="absolute top-12 w-48 text-sm border rounded p-2 bg-[#9FB4BC]">
-          {dropdownLanguages.map((bank) => (
-            <li
-              key={bank.id}
-              onClick={() => handleBankClick(bank.id)}
-              className="text-[#101828] hover:text-[#FFFFFF] "
-            >
-              {bank.label}
-            </li>
-          ))}
-        </ul>
-      )}
+      {dolarRate ? (
+        <div className=" w-max p-2 bg-[#FFFFFF] rounded-lg text-[#1B1B1B]">
+          <div className="flex flex-col space-y-2 ">
+            <p className="font-case font-[Helvetica] text-lg ">$ დოლარი</p>
+            <p>GEL {dolarRate}</p>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };
